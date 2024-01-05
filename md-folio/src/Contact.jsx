@@ -76,7 +76,7 @@ export default function Contact() {
                                         name="message"
                                         rows={3}
 
-                                        style={{ height: "150px", width: "600px", resize: 'none' }}
+                                        style={{resize: 'none' }}
 
                                     />
                                 </div>
