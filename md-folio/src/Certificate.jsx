@@ -40,7 +40,7 @@ function Certificate() {
                 </div>
 
 
-                <div className='container my-5 py-5'>
+                {/* <div className='container my-5 py-5'>
 
 <div className='text-center'>
     <h1 className='fw-semibold display-4'>CERTIFICATIONS</h1>
@@ -72,7 +72,7 @@ function Certificate() {
 
 </div>
 
-</div>
+</div> */}
 
 
 
