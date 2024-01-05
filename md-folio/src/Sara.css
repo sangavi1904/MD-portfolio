@@ -1,0 +1,176 @@
+.custom-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+  margin-bottom: 20px;
+
+
+
+}
+
+.card.custom-card {
+  border-radius: 35px;
+  border: none;
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+}
+
+.custom-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.zoom-effect {
+  transition: transform 0.3s ease;
+  /* Add a smooth transition effect for the zoom */
+}
+
+.custom-card:hover .zoom-effect {
+  transform: scale(1.1);
+  /* Zoom in effect on image when the card is hovered */
+}
+
+.subtitle.sub-title {
+  color: #f9004d;
+  letter-spacing: 2px;
+  display: block;
+  line-height: 14px;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.section-title h2.title {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: black;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.category-info {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+
+}
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: var(--color-separator);
+  font-size: 11px;
+  margin: -5px;
+
+}
+
+.anchor {
+  color: #f9004d;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 5px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.titlehead {
+  margin: 0;
+  transition: var(--transition);
+
+
+}
+
+.title a {
+  color: slategrey;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 34px;
+  display: block;
+  transition: 0.4s;
+  text-decoration: none;
+}
+
+.title a:hover {
+  color: #f9004d;
+}
+
+.titlehead-area {
+  margin-bottom: 9px;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 44px;
+}
+
+.titlehead-span {
+  font-size: 19px;
+  color: #3c3e41;
+}
+
+.description {
+  margin-bottom: 30px;
+}
+
+.para {
+  font-size: 18px;
+  color: slategrey;
+  font-weight: 300;
+  line-height: 30px;
+  display: inline-block;
+  margin-bottom: 20px;
+ 
+}
+
+.phone {
+  color: #3c3e41;
+  font-size: 18px;
+  font-weight: 500;
+  display: block;
+
+
+}
+.phone a{
+  text-decoration: none;
+}
+
+.email {
+  color: #3c3e41;
+  font-size: 18px;
+  font-weight: 500;
+  display: block;
+
+}
+.email a{
+  text-decoration: none;
+}
+
+.social-area .name {
+  font-size: 15px;
+  color: #1e2125;
+
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.description span a {
+  transition: 0.4s;
+  position: relative;
+  color: #3c3e41;
+  font-weight: 400;
+}
+.form-control:focus{
+  border-color:#f9004d !important;
+  box-shadow: 0 0 0 0.25rem #fed7e3 !important;
+}
+
+.rn-btn{
+  background-color: linear-gradient(145deg, #e2e8ec, #ffffff);;
+    box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;;
+
+    border: 0 none;
+}
+.rn-btn:hover{
+  background: linear-gradient(145deg, #6a67ce, #fc636b);
+  ;
+    color: white !important;
+}
