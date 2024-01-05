@@ -7,7 +7,7 @@ function Certificate() {
         <div>
 
 
-            <div className='container py-5 my-5' id='certificate'>
+            <div className='container py-5 my-5 overflow-hidden' id='certificate'>
                 <div className='text-center'>
                     <h1 className='heading4'>CERTIFICATIONS</h1>
                 </div>
