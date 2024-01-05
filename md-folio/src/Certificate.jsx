@@ -38,6 +38,45 @@ function Certificate() {
                         </div>
                     </div>
                 </div>
+
+
+                <div className='container my-5 py-5'>
+
+<div className='text-center'>
+    <h1 className='fw-semibold display-4'>CERTIFICATIONS</h1>
+</div>
+
+<div className='row d-flex my-5 py-5 justify-content-center align-items-center'>
+    <div className='col-md-6'>
+        <div className='row cer-1 rounded-3'>
+            <div className='col-9'>
+                <p className=''>Certified SQL developer, ORACLE</p>
+            </div>
+            <div className='col-3'>
+                <button className='secondbts rounded-4'>2020</button>
+            </div>
+            <hr />
+        </div>
+    </div>
+    <div className='col-md-6'>
+        <div className='row cer-1 rounded-3'>
+            <div className='col-9'>
+                <p>AWS Solutions Architect, Amazon Web Services</p>
+            </div>
+            <div className='col-3'>
+                <button className='secondbts'>2022</button>
+            </div>
+            <hr />
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+
+
+
             </div>
 
 
