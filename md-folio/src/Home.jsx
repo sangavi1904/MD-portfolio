@@ -60,7 +60,7 @@ function Home() {
                                 {/* <p>Venkatesan  <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p> */}
 
                         </div>
-                      
+
 
                         <p> I am a highly skilled and experienced software developer with expertise in MERN Stack and MEAN Stack development, Java development,
                             ArtIficial intelligence and Machine Learning, AWS DevOps tools, and automation testing. I am also certified in Oracle and AWS, further
