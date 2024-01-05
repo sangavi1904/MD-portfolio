@@ -74,14 +74,14 @@ function Home() {
                     </div>
                     <div className="col-md-6">
                         <div>
-                            <p className='display-4 mt-4 pt-4 fw-semibold'>Hi, I’m
-                                <span className='text-danger mx-3'>Venkatesan J a</span>Developer  </p>
+                            <p className='heading2 mt-4 pt-4'>Hi, I’m
+                                <span className='heading mx-3'>Venkatesan J a</span>Developer  </p>
                                 {/* <p>Venkatesan  <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p> */}
 
                         </div>
 
 
-                        <p> I am a highly skilled and experienced software developer with expertise in MERN Stack and MEAN Stack development, Java development,
+                        <p className='heading3'> I am a highly skilled and experienced software developer with expertise in MERN Stack and MEAN Stack development, Java development,
                             ArtIficial intelligence and Machine Learning, AWS DevOps tools, and automation testing. I am also certified in Oracle and AWS, further
                             validating my knowledge and proficiency in these areas. Over the years, I have honed my skills and gained valuable experience in creating
                             robust and scalable applications, implementing intelligent algorithms, and leveraging cloud technologies to deliver efficient solutions.
@@ -93,12 +93,12 @@ function Home() {
                             exciting world of software development and technology innovation.</p>
 
                         <div className='row pt-3 mt-3 '>
-                            <div className='col-6'>
+                            <div className='col-6' style={{color:"#1e2125", fontWeight:"500"}}>
                                 <p>MY LINKEDIN PROFILE</p>
                                 <Link to="#">
                                     <img src="https://venkatesanj.com/wp-content/uploads/2023/07/Springboot.png" alt="LLinkedin logo" className='w-25' /></Link>
                             </div>
-                            <div className='col-6'>
+                            <div className='col-6' style={{color:"#1e2125", fontWeight:"500"}}>
                                 <p>BEST SKILLED IN</p>
                                 <div>
                                     <Link to="#">
