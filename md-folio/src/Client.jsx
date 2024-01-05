@@ -26,9 +26,9 @@ function Client() {
                             <div class="carousel-item active">
                                 <div className="row">
                                     <div className="col-md-4">
-                                        <div className='client'>
-                                            <div className='inner'>
-                                                <div className='card-info'>
+                                        <div className='client h-100'>
+                                            <div className='inner h-100'>
+                                                <div className='card-info h-100'>
                                                     <div className='card-thumbnail'>
                                                         <img decoding="async" loading="lazy" width="340" height="250" src="https://venkatesanj.com/wp-content/uploads/2023/07/profile-6-340x250.png" class="attachment-rainbow-thumbnail-sm size-rainbow-thumbnail-sm" alt="client-image" />
 
