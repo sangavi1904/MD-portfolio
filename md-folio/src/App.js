@@ -4,6 +4,7 @@ import Card from './Card'
 import Contact from './Contact'
 import Home from './Home'
 import Certificate from './Certificate';
+import Client from './Client';
 import { BrowserRouter } from 'react-router-dom'
 
 
