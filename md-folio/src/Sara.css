@@ -20,17 +20,17 @@
 
 .zoom-effect {
   transition: transform 0.3s ease;
-  /* Add a smooth transition effect for the zoom */
+  
 }
 
 .custom-card:hover .zoom-effect {
   transform: scale(1.1);
-  /* Zoom in effect on image when the card is hovered */
+
 }
 
 .subtitle.sub-title {
   color: #f9004d;
-  letter-spacing: 2px;
+  
   display: block;
 
   font-weight: 500;
@@ -118,7 +118,7 @@
   line-height: 30px;
   display: inline-block;
   margin-bottom: 20px;
- 
+
 }
 
 .phone {
@@ -129,7 +129,8 @@
 
 
 }
-.phone a{
+
+.phone a {
   text-decoration: none;
 }
 
@@ -140,7 +141,8 @@
   display: block;
 
 }
-.email a{
+
+.email a {
   text-decoration: none;
 }
 
@@ -158,18 +160,22 @@
   color: #3c3e41;
   font-weight: 400;
 }
-.form-control:focus{
-  border-color:#f9004d !important;
+
+.form-control:focus {
+  border-color: #f9004d !important;
   box-shadow: 0 0 0 0.25rem #fed7e3 !important;
 }
 
-.rn-btn{
-  background-color: linear-gradient(145deg, #e2e8ec, #ffffff);;
-    box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;;
+.rn-btn {
+  background-color: linear-gradient(145deg, #e2e8ec, #ffffff);
+  ;
+  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+  ;
 
-    border: 0 none;
+  border: 0 none;
 }
-.rn-btn:hover{
+
+.rn-btn:hover {
   background: linear-gradient(145deg, #6a67ce, #fc636b);
   ;
     color: white !important;
@@ -191,32 +197,5 @@
   width: 100px;
   height: 40px;
   background: linear-gradient(145deg, rgb(26, 134, 80), rgb(9, 82, 48), rgb(27, 184, 6));
-  color: white;
-}
-
-.cer-1 {
-  width: 100%;
-  height: 200PX;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.cer-1:hover {
-  background: linear-gradient(145deg, #f1427a, #3771af, #cec8d9);
-  color: white;
-}
-
-.secondbts {
-  border: none;
-  width: 100px;
-  height: 50px;
-  background-color: #cec8d9;
-  color: #f9004d;
-}
-
-.secondbts:hover {
-  background-color: #f9004d;
   color: white;
 }
