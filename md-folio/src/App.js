@@ -2,16 +2,23 @@
 import './Sara.css';
 import Card from './Card'
 import Contact from './Contact'
-import Client from './Client'
-import Car from './Car'
+import Home from './Home'
+import Certificate from './Certificate';
+import { BrowserRouter } from 'react-router-dom'
+
 
 function App() {
   return (
     <div className="App">
-     <Card/>
-     <Contact/>
-     <Client/>
-     
+      <BrowserRouter>
+        <Home />
+        <Certificate />
+        <Card />
+        <Contact />
+
+
+      </BrowserRouter>
+
     </div>
   );
 }
