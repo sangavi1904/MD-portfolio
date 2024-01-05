@@ -180,6 +180,13 @@
   ;
     color: white !important;
 }
+/* DIWA CSS */
+.home-nav{
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  z-index: 987698;
+}
 
 /* CERTIFICATE */
 .certification {
@@ -199,6 +206,11 @@
   background: linear-gradient(145deg, rgb(26, 134, 80), rgb(9, 82, 48), rgb(27, 184, 6));
   color: white;
 }
+.diwa{
+  position: fixed;
+}
+
+
 /* .cer-1 {
   width: 100%;
   height: 200PX;
@@ -225,6 +237,7 @@
   background-color: #f9004d;
   color: white;
 } */
+/* DIWA CSS FINISH */
 .client.inner {
   display: flex;
   justify-content: center;
@@ -349,3 +362,101 @@
     width: 100%;
     top: 20px;
   }
+/* LAVA CSS */
+.card-li li{
+  padding-top: 12px;
+}
+/* lava finish */
+
+/* JAGAN CSS */
+.techcard{
+  height: 300px!important;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: rgb(232, 232, 232) !important;
+  
+}
+.icondiv{
+  height: 100px;
+  
+  
+}
+.techcard:hover{
+  color: white;
+  background-image:  linear-gradient( #578cff,#f566ff);
+  
+
+
+}
+.zooming-effect {
+  transition: transform 0.3s ease-in-out;
+}
+
+.zooming-effect:hover {
+  transform: scale(.9);
+}
+ .professinal{
+
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  flex-direction: column;
+
+  
+} 
+.cards-button{
+  border:none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.experience:hover .cards-button{
+  display: inline-block;
+  
+  padding: 10px 20px;
+  font-size:20px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  /* border: 2px solid #3498db;
+  border-radius: 5px; */
+  color: #3498db;
+  background-color: white;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+
+}
+.experience{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  
+}
+.experience:hover{
+  color: white;
+  background-image:  linear-gradient( #578cff,#f566ff);
+}
+.professinal-p{
+  text-align: justify;
+}
+.nav-div{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.nav-button {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 10px 100px;
+  font-size: 40px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+ /* box-shadow: rgba(116, 114, 114, 0.35) 0px 5px 15px; */
+ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  /* border-radius: 5px;  */
+  color: #3e3e3e;
+  background-color: white;
+  transition: background-color 0.3s, color 2s, border-color 0.3s;
+
+}
+.nav-button:hover {
+  color:#0c86d7;
+  background-image:  linear-gradient( #c3c1c1,#f9f6f9);
+  box-shadow: none;
+}
+/* JAGAN FINISH */

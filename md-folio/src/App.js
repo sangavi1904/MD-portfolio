@@ -6,6 +6,9 @@ import Home from './Home'
 import Certificate from './Certificate';
 import Client from '../src/Client'
 import { BrowserRouter } from 'react-router-dom'
+import Skills from './Skills';
+import Experience from './Experience';
+import Technical from './Technical';
 
 
 function App() {
@@ -13,8 +16,11 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Home />
-        <Certificate />
+        <Skills/>
+        <Certificate/>
+        <Technical/>
         <Card />
+        <Experience/>
         <Client/>
         <Contact />
 

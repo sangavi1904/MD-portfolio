@@ -11,8 +11,8 @@ function Home() {
 
 
             <div>
-                <nav class="navbar navbar-expand-lg bg-body-tertiary fixed" id='home'>
-                    <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg " id='home'>
+                    <div class="container-fluid bg-body-tertiary home-nav">
                         <Link class="navbar-brand" to="#">
                             <img src="https://venkatesanj.com/wp-content/uploads/2023/06/logo-vertical-2.png" alt=" navlogo" />
                         </Link>
@@ -20,7 +20,7 @@ function Home() {
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                            <ul class="navbar-nav ms-auto mb-3 p-4 mb-lg-0 text-center">
                                 <li class="nav-item">
                                     {/* <Link class="nav-link active" aria-current="page" to=''>Home</Link> */}
                                     <a class="nav-link active" aria-current="page" href='#home'> Home</a> 
@@ -65,7 +65,7 @@ function Home() {
             {/* navber end */}
 
 
-            <div className="container">
+            <div className="container mt-4 pt-4">
                 <div className="row">
                     <div className="col-md-6">
                         <div>
