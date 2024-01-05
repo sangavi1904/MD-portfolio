@@ -174,3 +174,22 @@
   ;
     color: white !important;
 }
+
+/* CERTIFICATE */
+.certification {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  background-image: url(./Assets/images/cer-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.certi-bts {
+  border: none;
+  width: 100px;
+  height: 40px;
+  background: linear-gradient(145deg, rgb(26, 134, 80), rgb(9, 82, 48), rgb(27, 184, 6));
+  color: white;
+}
