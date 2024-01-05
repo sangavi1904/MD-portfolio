@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Certificate from './Certificate'
 
 
 function Home() {
@@ -10,7 +11,7 @@ function Home() {
 
 
             <div>
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary fixed" id='home'>
                     <div class="container-fluid">
                         <Link class="navbar-brand" to="#">
                             <img src="https://venkatesanj.com/wp-content/uploads/2023/06/logo-vertical-2.png" alt=" navlogo" />
@@ -21,22 +22,40 @@ function Home() {
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
                                 <li class="nav-item">
-                                    <Link class="nav-link active" aria-current="page" to="#">Home</Link>
+                                    {/* <Link class="nav-link active" aria-current="page" to=''>Home</Link> */}
+                                    <a class="nav-link active" aria-current="page" href='#home'> Home</a> 
                                 </li>
                                 <li class="nav-item">
-                                    <Link class="nav-link active" aria-current="page" to="#">Summary</Link>
+                                    {/* <Link class="nav-link active" aria-current="page" to="#">Certificate</Link> */}
+                                    <a class="nav-link active" aria-current="page" href="#summary">Summary</a>
                                 </li>
                                 <li class="nav-item">
-                                    <Link class="nav-link active" aria-current="page" to="#">Tecnical Skill</Link>
+                                    {/* <Link class="nav-link active" aria-current="page" to="#">Certificate</Link> */}
+                                    <a class="nav-link active" aria-current="page" href="#certificate">Certificate</a>
                                 </li>
                                 <li class="nav-item">
-                                    <Link class="nav-link active" aria-current="page" to="#">Resume</Link>
+                                    {/* <Link class="nav-link active" aria-current="page" to="#">Testimonial</Link> */}
+                                    <a class="nav-link active" aria-current="page" href="#technicalskill">Technical Skill</a>
+
                                 </li>
                                 <li class="nav-item">
-                                    <Link class="nav-link active" aria-current="page" to="#">Testimonial</Link>
+                                    {/* <Link class="nav-link active" aria-current="page" to="#">Card</Link> */}
+                                    <a class="nav-link active" aria-current="page" href="#card">My Project</a>
+
                                 </li>
                                 <li class="nav-item">
-                                    <Link class="nav-link active" aria-current="page" to="#">Contact</Link>
+                                    {/* <Link class="nav-link active" aria-current="page" to="#">Resume</Link> */}
+                                    <a class="nav-link active" aria-current="page" href="#resume">Resume</a>
+                                    
+                                </li>
+                               
+                                <li class="nav-item">
+                                    {/* <Link class="nav-link active" aria-current="page" to="#">Contact</Link> */}
+                                    <a class="nav-link active" aria-current="page" href="#testimonial">Testimonial</a>
+                                </li>
+                                <li class="nav-item">
+                                    {/* <Link class="nav-link active" aria-current="page" to="#">Contact</Link> */}
+                                    <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -94,7 +113,6 @@ function Home() {
                 </div>
             </div>
             {/* Banner End */}
-
 
         </div >
 
