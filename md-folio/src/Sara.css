@@ -292,7 +292,7 @@
 .card-description{
   padding: 50px 40px 50px 40px;
   border-radius: 10px;
-  margin-top: 115px;
+  
   width: 100%;
 }
 
@@ -348,4 +348,9 @@
     position: absolute;
     width: 100%;
     top: 20px;
+  }
+  .carousel-indicators [data-bs-target]{
+    height: 15px !important;
+    border-radius: 50%;
+    width: 15px !important;
   }
