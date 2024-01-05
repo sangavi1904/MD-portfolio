@@ -14,6 +14,7 @@ function App() {
         <Home />
         <Certificate />
         <Card />
+        <Client/>
         <Contact />
 
 
