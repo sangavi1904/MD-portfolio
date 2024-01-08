@@ -55,17 +55,18 @@ function Experience() {
          <section>
         <div className="row d-flex justify-content-around ">
           <div className="col-md-3 mt-5 rounded-4 experience">
-            <div className="row container ">
-              <div className="col-md-6 pt-4  mt-3">
-                <h2 className="">Software Engineer</h2>
+            <div className="row container-fluid">
+            <div className="col-md-6 pt-4  mt-3">
+                <h4 className="">Software Engineer</h4>
               </div>
               <div className="col-md-6 justify-content-end text-md-end text-center mt-5 ">
-                <button className="mt-2 px-4 py-3 rounded-3 fs-5 cards-button ">
+                <button className="mt-2 px-3 py-2 rounded-3  cards-button ">
                   Chennai
                 </button>
               </div>
-              <div className="py-3 my-5 heading3">
-                <ul>
+              </div>
+              <div className="py-1 px-2 my-5 ">
+                <ul className="heading3  fw-bold">
                   <li>
                     Implemented React JS code to handle cross browser
                     compatibility issues in Mozilla, IE 7, 8, 9, Safari and FF.
@@ -167,20 +168,21 @@ function Experience() {
                   <li> Used flickity.js for creating carousel-images.</li>
                 </ul>
               </div>
-            </div>
+            
           </div>
           <div className="col-md-3 mt-5 rounded-3 experience">
-            <div className="row container">
+          <div className="row container-fluid">
             <div className="col-md-6 pt-4  mt-3">
-                <h2 className="">Software Engineer</h2>
+                <h4 className="">Software Engineer</h4>
               </div>
               <div className="col-md-6 justify-content-end text-md-end text-center mt-5 ">
-                <button className="mt-2 px-4 py-3 rounded-3 fs-5 cards-button ">
+                <button className="mt-2 px-3 py-2 rounded-3  cards-button ">
                   Chennai
                 </button>
               </div>
-              <div className="py-3 my-5 heading3 ">
-                <ul>
+              </div>
+              <div className="py-1 px-2 my-5 ">
+                <ul className="heading3  fw-bold">
                   <li>
                     Implemented various screens for the front end using React.js
                     and used various predefined components from NPM (Node
@@ -279,20 +281,21 @@ function Experience() {
                   </li>
                 </ul>
               </div>
-            </div>
+            
           </div>
           <div className="col-md-3 mt-5 rounded-3 experience">
-            <div className="row container">
-            <div className="col-md-6 pt-4  mt-3">
-                <h2 className="">Software Engineer</h2>
+            <div className="row container-fluid">
+            <div className="col-md-6 pt-4 mt-3">
+                <h4 className="">Software Engineer</h4>
               </div>
               <div className="col-md-6 justify-content-end text-md-end text-center mt-5 ">
-                <button className="mt-2 px-4 py-3 rounded-3 fs-5 cards-button ">
+                <button className="mt-2 px-3 py-2 rounded-3  cards-button ">
                   Chennai
                 </button>
               </div>
-              <div className="py-3 my-5 heading3 ">
-                <ul>
+              </div>
+              <div className="py-1 px-2 my-5 ">
+                <ul className="heading3  fw-bold">
                   <li>
                     Used Python and Django to interface with the jQuery IJI and
                     manage the storage and deletion of content
@@ -401,7 +404,6 @@ function Experience() {
                 </ul>
               </div>
             </div>
-          </div>
         </div>
       </section>
       <section>
@@ -411,12 +413,12 @@ function Experience() {
               <div className=" professinal experience  px-5 mx-5 rounded-3">
                 <div className="row align-items-center justify-content-between">
                   <div className="col-md-8 pt-4 mt-3">
-                    <h4 className="my-4">
+                    <h5 className="my-4">
                       Python Django Developer/ Backend Developer,
-                    </h4>
+                    </h5>
                   </div>
                   <div className="col-md-4 mt-4 text-md-end text-center">
-                    <button className="mt-2 px-4 py-3 rounded-3 cards-button ">
+                    <button className="mt-2 px-3 py-2 rounded-3 cards-button ">
                       Chennai
                     </button>
                   </div>
@@ -446,12 +448,12 @@ function Experience() {
               <div className=" professinal experience  px-5 mx-5 rounded-3">
                 <div className="row align-items-center justify-content-between">
                   <div className="col-md-8 pt-4 mt-3">
-                    <h4 className="my-4">
+                    <h5 className="my-4">
                       Python Django Developer/ Backend Developer,
-                    </h4>
+                    </h5>
                   </div>
                   <div className="col-md-4 mt-4 text-md-end text-center">
-                    <button className="mt-2 px-4 py-3 rounded-3 cards-button ">
+                    <button className="mt-2 px-3 py-2 rounded-3 cards-button ">
                       Chennai
                     </button>
                   </div>
@@ -505,7 +507,7 @@ function Experience() {
                 </div>
 
                 <hr className="mt-4"></hr>
-                <p className="fs-4 py-5 px-3 my-5 professinal-p">
+                <p className="fs-4 py-5 px-3 my-5 headine3">
                   I am a skilled software developer with expertise in Java and
                   Python, specializing in building robust and scalable
                   applications. With a strong foundation in Java Spring Boot and
@@ -539,8 +541,8 @@ function Experience() {
                       </button>
                     </div>
                   </div>
-                  <p className="fs-4 py-4">Hexaware Technologies (2016-2018)</p>
-                  <hr className="py-5"></hr>
+                  <p className="fs-4 py-2 ">Hexaware Technologies (2016-2018)</p>
+                  <hr className="py-5"></ hr>
                 </div>
                 <div className="experience mt-5 mx-5 rounded-3 px-5">
                   <div className="row align-items-center justify-content-between">

@@ -65,10 +65,10 @@ function Home() {
             
 
 
-            <div className="container mt-4 pt-4">
-                <div className="row">
-                    <div className="col-md-6">
-                        <div>
+            <div className="container-fluid mt-4 pt-4">
+                <div className="row mt-">
+                    <div className="col-md-6 mt-5 pt-3 ">
+                        <div className='rounded-3 md-img-shadow mx-2'>
                             <img src="https://venkatesanj.com/wp-content/uploads/2023/06/Image.png" className='img-fluid' alt="md-img" />
                         </div>
                     </div>
