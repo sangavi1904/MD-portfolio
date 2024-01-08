@@ -14,6 +14,7 @@ import Cardinside from './Cardinside';
 import Smart from './Smart';
 import Trading from './Trading';
 import Transaction from './Transaction';
+import Typed from './Components/Typed';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           <Route path='/Smart' element={<Smart/>} />
           <Route path='/Trading' element={<Trading/>} />
           <Route path='/Transaction' element={<Transaction/>} />
+          <Route path='/Typed' element={<Typed/>}/>
 
         </Routes>
 

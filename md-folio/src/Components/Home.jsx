@@ -16,14 +16,13 @@ import linked from '../Assets/images/Linkedin1.png'
 import angular from '../Assets/images/Angular.png'
 import reactnative from '../Assets/images/React native.png'
 import spring from '../Assets/images/Spring boot.png'
+import Typed from './Typed'
 
 
 function Home() {
 
     return (
-
         <div>
-
             {/* Nav-Start */}
             <div>
                 <nav class="navbar navbar-expand-lg " id='home'>
@@ -35,18 +34,18 @@ function Home() {
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ms-auto mb-3 p-4 mb-lg-0 text-center">
-                                <li class="nav-item heading5">
+                            <ul class="navbar-nav ms-auto mb-3 p-4 mb-lg-0 text-center ">
+                                <li class="nav-item heading6 ">
                                     {/* <Link class="nav-link active" aria-current="page" to=''>Home</Link> */}
                                     <a class="nav-link active px-3" aria-current="page" id='name-nav' href='#home'> Home</a>
                                 </li>
-                                <li class="nav-item heading5">
+                                <li class="nav-item heading6">
                                     <a class="nav-link active px-3 " aria-current="page" id='name-nav' href="#summary">Summary</a>
                                 </li>
                                 {/* <li class="nav-item heading5">
                                     <a class="nav-link active " aria-current="page" href="#certificate">Certificate</a>
                                 </li> */}
-                                <li class="nav-item heading5 ">
+                                <li class="nav-item heading6 ">
                                     {/* <Link class="nav-link active" aria-current="page" to="#">Testimonial</Link> */}
                                     <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#technicalskill">Technical Skills</a>
 
@@ -55,17 +54,17 @@ function Home() {
                                     <a class="nav-link active " aria-current="page" href="#card">My Project</a>
 
                                 </li> */}
-                                <li class="nav-item heading5">
+                                <li class="nav-item heading6">
                                     {/* <Link class="nav-link active" aria-current="page" to="#">Resume</Link> */}
                                     <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#resume">Resume</a>
 
                                 </li>
 
-                                <li class="nav-item heading5 ">
+                                <li class="nav-item heading6 ">
                                     {/* <Link class="nav-link active" aria-current="page" to="#">Contact</Link> */}
                                     <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#testimonial">Testimonial</a>
                                 </li>
-                                <li class="nav-item heading5">
+                                <li class="nav-item heading6">
                                     {/* <Link class="nav-link active" aria-current="page" to="#">Contact</Link> */}
                                     <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#contact">Contact</a>
                                 </li>
@@ -81,22 +80,19 @@ function Home() {
 
             {/* Banner-Start */}
             <div className="container mt-4 pt-4">
-                <div className="row mt-">
-
+                <div className="row">
                     <div className="col-md-6 mt-5 pt-3  ">
-                        <div className="col-md-10 mx-auto">
+                        <div className=" mx-auto">
                             <div className='rounded-3 md-img-shadow mx-2'>
                                 <img src="https://venkatesanj.com/wp-content/uploads/2023/06/Image.png" className='img-fluid' alt="md-img" />
                             </div>
                         </div>
                     </div>
                     <div className="col-md-6">
-                        <div>
-                            <p className='heading2 mt-4 pt-4'>Hi, I’m
-                                <span className='heading mx-3'>Venkatesan J a</span>Developer  </p>
-                            {/* <p>Venkatesan  <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p> */}
-
-                        </div>
+                       <div className='mt-5'>
+                        <p className='display-3' style={{fontWeight:"1000"}}> <span className='mt-4 pt-4 heading2 ' >Hi,</span> <span className="heading2">I'm</span>  <span className='heading float-end  mx-3'>Venkatesan J </span>
+                        <Typed/></p>
+                       </div>
 
 
                         <p className='heading3'> I am a highly skilled and experienced software developer with expertise in MERN Stack and MEAN Stack development, Java development,
@@ -135,11 +131,11 @@ function Home() {
 
             {/* Skills-start */}
             <div>
-                <section className='container my-5  px-5' id='summary'>
-                    <h3 className='text-center ' style={{ color: "#f9004d" }}>LANGUAGES AND FRAMEWORK</h3>
-                    <h4 className='title sec-title text-center mt-4 ' style={{ color: "black" }}>SKILLS</h4>
-                    <div className="row d-flex justify-content-between px-md-5 mt-3">
-                        <div className="col-md-2"><h6 style={{ color: "#27272E", fontWeight: "700" }}>Front-end Development</h6>
+                <section className='container my-5 py-3 px-5' id='summary'>
+                    <h3 className='text-center mb-3 ' style={{ color: "#f9004d" }}>LANGUAGES AND FRAMEWORK</h3>
+                    <h4 className='title sec-title text-center mb-5 p-0 heading6  fw-bold' style={{ color: "black"  }}>SKILLS</h4>
+                    <div className="row d-flex justify-content-between px-md-5">
+                        <div className="col-md-2 "><h6 style={{ color: "#27272E", fontWeight: "700" }} className='heading6' >Front-end Development</h6>
                             <ul className="mt-3 card-li ">
                                 <li>HTML5</li>
                                 <li>CSS3</li>
@@ -148,7 +144,7 @@ function Home() {
                                 <li>JavaScript</li>
                                 <li>ReactJS</li>
                             </ul></div>
-                        <div className="col-md-2"><h6 style={{ color: "#27272E", fontWeight: "700" }}>Back-end Development</h6>
+                        <div className="col-md-2"><h6 style={{ color: "#27272E", fontWeight: "700" }}  className='heading6' >Back-end Development</h6>
                             <ul className="mt-3 card-li">
                                 <li>Java</li>
                                 <li>Spring Boot</li>
@@ -158,14 +154,14 @@ function Home() {
                                 <li>Django</li>
                                 <li>Flask</li>
                             </ul></div>
-                        <div className="col-md-2"> <h6 style={{ color: "#27272E", fontWeight: "bold" }}>Database</h6>
+                        <div className="col-md-2"> <h6 style={{ color: "#27272E", fontWeight: "bold" }}  className='heading6'>Database</h6>
                             <ul className="mt-3 card-li">
                                 <li>MongoDB</li>
                                 <li>Oracle SQL</li>
                                 <li>MySQL</li>
                                 <li>Tailwind CSS</li>
                             </ul></div>
-                        <div className="col-md-2"> <h6 style={{ color: "#27272E", fontWeight: "bold" }}>Cloud Services</h6>
+                        <div className="col-md-2"> <h6 style={{ color: "#27272E", fontWeight: "bold" }}  className='heading6'>Cloud Services</h6>
                             <ul className="mt-3 card-li">
                                 <li>AWS (Amazon Web Services)</li>
                                 <li>EC2 (Elastic Compute Cloud)</li>
@@ -177,7 +173,7 @@ function Home() {
                                 <li>Firebase</li>
                             </ul>
                         </div>
-                        <div className="col-md-2 "><h6 style={{ color: "#27272E", fontWeight: "bold" }}>Testing and Automation</h6>
+                        <div className="col-md-2 "><h6 style={{ color: "#27272E", fontWeight: "bold" }}  className='heading6'>Testing and Automation</h6>
                             <ul className="mt-3 card-li">
                                 <li>Selenium</li>
                                 <li>Cucumber</li>
@@ -189,14 +185,14 @@ function Home() {
                     </div>
                     <div className="row d-flex justify-content-between px-md-5 mt-3">
                         <div className="col-md-2">
-                            <h6 style={{ color: "#27272E", fontWeight: "700" }}>Machine Learning and Artificial Intelligence</h6>
+                            <h6 style={{ color: "#27272E", fontWeight: "700" }}  className='heading6'>Machine Learning </h6>
                             <ul className="mt-3 card-li ">
                                 <li>Python</li>
                                 <li>scikit-learn</li>
                                 <li>TensorFlow</li>
                                 <li>PyTorch</li>
                             </ul></div>
-                        <div className="col-md-3"><h6 style={{ color: "#27272E", fontWeight: "bold" }}>DevOps</h6>
+                        <div className="col-md-3"><h6 style={{ color: "#27272E", fontWeight: "bold" }}  className='heading6'>DevOps</h6>
                             <ul className="mt-3 card-li">
                                 <li>Git</li>
                                 <li>Jenkins</li>
@@ -204,13 +200,13 @@ function Home() {
                                 <li>Kubernetes</li>
                                 <li>Ansible</li>
                             </ul></div>
-                        <div className="col-md-3"><h6 style={{ color: "#27272E", fontWeight: "bold" }}>Java Frameworks</h6>
+                        <div className="col-md-3"><h6 style={{ color: "#27272E", fontWeight: "bold" }}  className='heading6'>Java Frameworks</h6>
                             <ul className="mt-3 card-li">
                                 <li>Spring Boot</li>
                                 <li>Spring MVC</li>
                                 <li>Hibernate</li>
                             </ul></div>
-                        <div className="col-md-3"> <h6 style={{ color: "#27272E", fontWeight: "bold" }}>Other Tools</h6>
+                        <div className="col-md-3"> <h6 style={{ color: "#27272E", fontWeight: "bold" }}  className='heading6'>Other Tools</h6>
                             <ul className="mt-3 card-li">
                                 <li>JIRA</li>
                                 <li>Bitbucket</li>
@@ -266,9 +262,9 @@ function Home() {
 
                 <section className="container">
                     <div className="text-center mt-5">
-                        <span class="subtitle sub-title mt-3" style={{ fontFamily: '"Montserrat", sans-serif' }}>TECHNICAL</span>
-                        <h2 class="title sec-title" style={{ color: "black" }}>EXCELLENCE
-                        </h2>
+                    <span class="subtitle sub-title" style={{ fontFamily: '"Montserrat", sans-serif' }}>TECHNICAL</span>
+                    <h4 className='title sec-title text-center mb-5 p-0 heading6  fw-bold' style={{ color: "black"  }}>EXPERIENCE</h4>
+
 
 
                     </div>
@@ -388,7 +384,7 @@ function Home() {
                 <div class="elementor-widget-container" id='card' style={{ margin: "3rem" }}>
                     <div class="section-title text-center aos-init aos-animate" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true">
                         <span class="subtitle sub-title" style={{ fontFamily: '"Montserrat", sans-serif' }}>VISIT MY PROJECTS</span>
-                        <h2 class="title sec-title" style={{ color: "black" }}>My Projects
+                        <h2 class="title sec-title" style={{ color: "black", }}>MY PROJECTS
                         </h2>
                     </div>
                 </div>
@@ -404,7 +400,7 @@ function Home() {
 
                                     />
                                 </a>
-                                <div class="card-body">
+                                <div class="card-body heading5">
                                     <div class="content" style={{ padding: "18px" }}>
                                         <div class="category-info">
 
@@ -421,7 +417,7 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-md-4'>
+                        <div className='col-md-4 '>
                             <div class="card custom-card p-5" >
                                 <a href="/">
                                     <img src="https://venkatesanj.com/wp-content/uploads/2023/07/4342541_19471-340x250.jpg"
@@ -429,7 +425,7 @@ function Home() {
                                         alt="..."
 
                                     />
-                                </a>                       <div class="card-body">
+                                </a>                       <div class="card-body heading5">
                                     <div class="content" style={{ padding: "18px" }}>
                                         <div class="category-info">
 
@@ -454,7 +450,7 @@ function Home() {
                                         alt="..."
 
                                     />
-                                </a>                        <div class="card-body">
+                                </a>                        <div class="card-body heading5">
                                     <div class="content" style={{ padding: "18px" }}>
                                         <div class="category-info">
 
@@ -479,7 +475,7 @@ function Home() {
                                         alt="..."
 
                                     />
-                                </a>                       <div class="card-body">
+                                </a>                       <div class="card-body heading5">
                                     <div class="content" style={{ padding: "18px" }}>
                                         <div class="category-info">
 
@@ -504,7 +500,7 @@ function Home() {
                                         alt="..."
 
                                     />
-                                </a>                         <div class="card-body">
+                                </a>                         <div class="card-body heading5">
                                     <div class="content" style={{ padding: "18px" }}>
                                         <div class="category-info">
 
@@ -514,7 +510,7 @@ function Home() {
 
                                         </div>
                                         <h4 class="title">
-                                            <a href="/Transaction" data-url="" data-toggle="modal">Transaction Managment System
+                                            <a href="/Transaction" data-url="" data-toggle="modal">Transaction Managment 
                                                 <i class="feather-arrow-up-right"></i></a>
                                         </h4>
                                     </div>
@@ -531,7 +527,7 @@ function Home() {
                 <div className="overflow-hidden" id="resume">
                     <div className="text-md-center text-center mt-5">
                         <span class="subtitle sub-title" style={{ fontFamily: '"Montserrat", sans-serif' }}>7+ YEARS OF EXPERIENCE</span>
-                        <h2 class="title sec-title" style={{ color: "black" }}>My Resume
+                        <h2 class="title sec-title" style={{ color: "black" }}>MY RESUME
                         </h2>
                     </div>
                     <div className="row justify-content-md-center  mt-5">
@@ -549,7 +545,7 @@ function Home() {
                                         aria-selected="true"
                                         className="mt-4 mx-5 text-md-center rounded-4 nav-button"
                                     >
-                                        <h4>Experience</h4>
+                                        <h4 className='heading6'>Experience</h4>
                                     </button>
                                 </li>
                                 <li class="nav-item" role="presentation">
@@ -564,7 +560,7 @@ function Home() {
                                         aria-selected="true"
                                         className=" text-md-center rounded-4  mt-4 nav-button"
                                     >
-                                        <h4>Professional</h4>
+                                        <h4 className='heading6'>Professional</h4>
                                     </button>
                                 </li>
                             </ul>
@@ -583,7 +579,7 @@ function Home() {
                                     <div className="col-md-3 mt-5 rounded-4 experience">
                                         <div className="row container-fluid">
                                             <div className="col-md-6 pt-4  mt-3">
-                                                <h4 className="">Software Engineer</h4>
+                                                <h4 className="heading6">Software Engineer</h4>
                                             </div>
                                             <div className="col-md-6 justify-content-end text-md-end text-center mt-5 ">
                                                 <button className="mt-2 px-3 py-2 rounded-3  cards-button ">
@@ -699,7 +695,7 @@ function Home() {
                                     <div className="col-md-3 mt-5 rounded-3 experience">
                                         <div className="row container-fluid">
                                             <div className="col-md-6 pt-4  mt-3">
-                                                <h4 className="">Software Engineer</h4>
+                                                <h4 className="heading6">Software Engineer</h4>
                                             </div>
                                             <div className="col-md-6 justify-content-end text-md-end text-center mt-5 ">
                                                 <button className="mt-2 px-3 py-2 rounded-3  cards-button ">
@@ -812,7 +808,7 @@ function Home() {
                                     <div className="col-md-3 mt-5 rounded-3 experience">
                                         <div className="row container-fluid">
                                             <div className="col-md-6 pt-4 mt-3">
-                                                <h4 className="">Software Engineer</h4>
+                                                <h4 className="heading6">Software Engineer</h4>
                                             </div>
                                             <div className="col-md-6 justify-content-end text-md-end text-center mt-5 ">
                                                 <button className="mt-2 px-3 py-2 rounded-3  cards-button ">
@@ -939,7 +935,7 @@ function Home() {
                                             <div className=" professinal experience  px-5 mx-5 rounded-3">
                                                 <div className="row align-items-center justify-content-between">
                                                     <div className="col-md-8 pt-4 mt-3">
-                                                        <h5 className="my-4">
+                                                        <h5 className="my-4 heading6" >
                                                             Python Django Developer/ Backend Developer,
                                                         </h5>
                                                     </div>
@@ -974,7 +970,7 @@ function Home() {
                                             <div className=" professinal experience  px-5 mx-5 rounded-3">
                                                 <div className="row align-items-center justify-content-between">
                                                     <div className="col-md-8 pt-4 mt-3">
-                                                        <h5 className="my-4">
+                                                        <h5 className="my-4 heading6">
                                                             Python Django Developer/ Backend Developer,
                                                         </h5>
                                                     </div>
@@ -1023,7 +1019,7 @@ function Home() {
                                             <div className=" professinal experience  px-5 rounded-3">
                                                 <div className="row align-items-center justify-content-between">
                                                     <div className="col-md-6 pt-4 mt-3">
-                                                        <h5>Professional Summary</h5>
+                                                        <h3 className='heading6 fw-bold'>Professional Summary</h3>
                                                     </div>
                                                     <div className="col-md-6 mt-4 text-md-end text-center">
                                                         <button className="mt-2 px-4 py-3 rounded-3 cards-button ">
@@ -1059,7 +1055,7 @@ function Home() {
                                                 <div className="experience mt-5 rounded-3 px-5">
                                                     <div className="row align-items-center justify-content-between">
                                                         <div className="col-md-6 pt-4 mt-3">
-                                                            <h5>Professional Summary</h5>
+                                                            <h5 className='heading6 fw-bold'>Professional Summary</h5>
                                                         </div>
                                                         <div className="col-md-6 mt-4 text-md-end text-center">
                                                             <button className="mt-2 px-4 py-3 rounded-3 cards-button ">
@@ -1073,7 +1069,7 @@ function Home() {
                                                 <div className="experience mt-5 rounded-3 px-5">
                                                     <div className="row align-items-center justify-content-between">
                                                         <div className="col-md-6 pt-4 mt-3">
-                                                            <h5>Professional Summary</h5>
+                                                            <h5 className='heading6 fw-bold'>Professional Summary</h5>
                                                         </div>
                                                         <div className="col-md-6 mt-4 text-md-end text-center">
                                                             <button className="mt-2 px-4 py-3 rounded-3 cards-button ">
@@ -1087,7 +1083,7 @@ function Home() {
                                                 <div className="experience mt-5 rounded-3 px-5">
                                                     <div className="row align-items-center justify-content-between">
                                                         <div className="col-md-6 pt-4 mt-3">
-                                                            <h5>Professional Summary</h5>
+                                                            <h5 className='heading6 fw-bold'>Professional Summary</h5>
                                                         </div>
                                                         <div className="col-md-6 mt-4 text-md-end text-center">
                                                             <button className="mt-2 px-4 py-3 rounded-3 cards-button ">
@@ -1130,8 +1126,8 @@ function Home() {
                         >
                             WHAT CLIENTS SAY
                         </span>
-                        <h2 class="title sec-title " style={{ color: "black" }}>
-                            Testimonial
+                        <h2  class="title sec-title " style={{ color: "black" }}>
+                            TESTIMONAL
                         </h2>
                     </div>
                 </div>
@@ -1158,8 +1154,8 @@ function Home() {
                                                         </div>
                                                         <div class="card-content">
                                                             <span class="subtitle mt-10"></span>
-                                                            <h3 class="title">Amit Sharma</h3>
-                                                            <span class="designation">CEO</span>
+                                                            <h3 class="title heading7">Amit Sharma</h3>
+                                                            <span class="designation heading6">CEO</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1170,7 +1166,7 @@ function Home() {
                                                 <div class="card-description ">
                                                     <div class="title-area">
                                                         <div class="title-info">
-                                                            <h3 class="title"> Smart Billing and CRM System</h3>
+                                                            <h3 class="title heading6"> Smart Billing and CRM System</h3>
                                                             <span class="date"> </span>
                                                         </div>
 
@@ -1289,8 +1285,8 @@ function Home() {
                                                         </div>
                                                         <div class="card-content">
                                                             <span class="subtitle mt-10"></span>
-                                                            <h3 class="title">Amit Sharma</h3>
-                                                            <span class="designation">CEO</span>
+                                                            <h3 class="title heading7">Amit Sharma</h3>
+                                                            <span class="designation heading6">CEO</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1301,7 +1297,7 @@ function Home() {
                                                 <div class="card-description ">
                                                     <div class="title-area">
                                                         <div class="title-info">
-                                                            <h3 class="title"> Smart Billing and CRM System</h3>
+                                                            <h3 class="title heading6"> Smart Billing and CRM System</h3>
                                                             <span class="date"> </span>
                                                         </div>
 
@@ -1420,8 +1416,8 @@ function Home() {
                                                         </div>
                                                         <div class="card-content">
                                                             <span class="subtitle mt-10"></span>
-                                                            <h3 class="title">Amit Sharma</h3>
-                                                            <span class="designation">CEO</span>
+                                                            <h3 class="title heading7">Amit Sharma</h3>
+                                                            <span class="designation heading6">CEO</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1432,7 +1428,7 @@ function Home() {
                                                 <div class="card-description ">
                                                     <div class="title-area">
                                                         <div class="title-info">
-                                                            <h3 class="title"> Smart Billing and CRM System</h3>
+                                                            <h3 class="title heading6"> Smart Billing and CRM System</h3>
                                                             <span class="date"> </span>
                                                         </div>
 
@@ -1594,7 +1590,7 @@ function Home() {
                 <div class="elementor-widget-container" id='contact' style={{ margin: "3rem" }}>
                     <div class="section-title text-center aos-init aos-animate" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true">
                         <span class="subtitle sub-title" style={{ fontFamily: '"Montserrat", sans-serif' }}>Contact</span>
-                        <h2 class="title sec-title " style={{ color: "black", fontSize: "25px" }}>Contact With Me
+                        <h2 class="title sec-title " style={{ color: "black", fontSize: "25px" }}>CONTACT WITH ME
                         </h2>
                     </div>
                 </div>
@@ -1610,18 +1606,19 @@ function Home() {
                                     />
                                 </a>
                                 <div className="titlehead mb-3 p-2">
-                                    <h4 className="titlehead-area p-0 mb-3">Venkatesan J</h4>
-                                    <span className="titlehead-span mb-4 ">Software Engineer</span>
+                                    <h4 className="titlehead-area p-0 mb-3 heading7 " >Venkatesan J</h4>
+                                    <span className="titlehead-span mb-4  heading6">Software Engineer</span>
                                 </div>
                                 <div className="description mb-4">
                                     <p className="para mb-4" style={{ fontFamily: '"Poppins",sans-serif' }}>
                                         Want to get in touch on Developing? Here's how you can reach me! - HAPPY CONNECTING!
                                     </p>
-                                    <div className='phone mb-4' style={{ fontSize: "20px" }}>Phone: <a href="tel:+918667672605">+91-8667672605</a></div>
-                                    <div className='email' style={{ fontSize: "20px" }}>Email: <a href="mailto:venkteshanj@axesstechnology.in">venkteshanj@axesstechnology.in</a></div>
+                                    <div className='phone mb-4' style={{ fontSize: "20px" }}>Phone: <a href="tel:+918667672605" className='heading6'>+91 
+                                    8667672605</a></div>
+                                    <div className='email' style={{ fontSize: "20px" }}>Email: <a href="mailto:venkteshanj@axesstechnology.in" className='heading6'>venkteshanj@axesstechnology.in</a></div>
                                 </div>
                                 <div className="social-area mb-4">
-                                    <div className="name mb-4" style={{ fontFamily: '""Montserrat", sans-serif;"' }}>My LinkedIn Profile</div>
+                                    <div className="name mb-4 heading7 fw-bold" style={{ fontFamily: '""Montserrat", sans-serif;"' }}>My LinkedIn Profile :</div>
                                     <div className="social-icon skill-share has-shadow mb-2">
                                         <Link to="#">
                                             <img src={linked} alt="Linkedin logo" className='img-fluid p-2' style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', width: '38px' }} /></Link>

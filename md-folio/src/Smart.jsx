@@ -5,7 +5,7 @@ const Smart = () => {
     const imageUrl = 'https://venkatesanj.com/wp-content/uploads/2021/08/26765739_2109.i607.018.S.m012.c12.fintech-isometric-icons-800x600.jpg'; 
 
     return (
-        <div className="container-fluid py-5 my-5 px-5" style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', borderRadius: '15px' }}>
+        <div className="container py-5 my-5 px-5 heading3" style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', borderRadius: '15px' }}>
              <div className="row align-items-center">
       <div className="col-md-6 text-center mt-4">
                     <img src={imageUrl} alt="Company Logo" className="img-fluid w-75 border-4"style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', borderRadius: '15px' }}  />

@@ -1,17 +1,34 @@
-import React from 'react'
-import Arrow from '../Assets/images/icons8-Uparrow.png'
+import React, { useEffect } from 'react';
 
 function Scroll() {
-    let scrollToTop =()=>{
-     window.scrollTo(0,0)
-     }
-   return (
-     <div>
-         <button onClick={scrollToTop} className='position-fixed end-0 bottom-0 px-3 py-2 m-2 z-3 rounded-circle border-0 arrow'>
-        <img src={Arrow} alt="" />
-         </button>
-     </div> 
-   )
- }
+  useEffect(() => {
+    const backToTop = document.querySelector('.back-to-top');
 
-export default Scroll
+    const toggleBackToTop = () => {
+      if (window.scrollY > 100) {
+        backToTop.classList.add('active');
+      } else {
+        backToTop.classList.remove('active');
+      }
+    };
+
+    window.addEventListener('load', toggleBackToTop);
+    window.addEventListener('scroll', toggleBackToTop);
+
+    return () => {
+      // Clean up the event listeners when the component unmounts
+      window.removeEventListener('load', toggleBackToTop);
+      window.removeEventListener('scroll', toggleBackToTop);
+    };
+  }, []);
+
+  return (
+    <div>
+      <a href="#" className="back-to-top d-flex align-items-center justify-content-center">
+        <i className="bi bi-arrow-up-short"></i>
+      </a>
+    </div>
+  );
+}
+
+export default Scroll;

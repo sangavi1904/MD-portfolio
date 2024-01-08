@@ -4,7 +4,7 @@ const Transaction = () => {
   const imageUrl = 'https://venkatesanj.com/wp-content/uploads/2021/08/15909026_1905.i039.037_online-payment-isometric-icons-800x600.jpg';
 
   return (
-    <div className="container-fluid py-5 my-5 px-5" style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', borderRadius: '15px' }}>
+    <div className="container py-5 my-5 px-5 heading3" style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', borderRadius: '15px' }}>
       <div className="row align-items-center">
         <div className="col-md-6 text-center mt-4">
           <img src={imageUrl} alt="Company Logo" className="img-fluid w-75 border-4" style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', borderRadius: '15px' }} />
