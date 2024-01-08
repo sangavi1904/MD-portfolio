@@ -471,11 +471,13 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   
   }
+  .md-img-shadow{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
   .experience:hover .cards-button{
     display: inline-block;
     
-    padding: 10px 20px;
-    font-size: 40px;
+    
     text-align: center;
     text-decoration: none;
     font-weight: bold;
@@ -505,7 +507,7 @@
   .nav-button {
     display: inline-block;
     margin-left: 10px;
-    padding: 10px 100px;
+    padding: 10px 10px;
     font-size: 40px;
     text-align: center;
     text-decoration: none;
