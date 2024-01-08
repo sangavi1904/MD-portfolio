@@ -1,29 +1,37 @@
 
 import './Sara.css';
-import Card from './Card'
-import Contact from './Contact'
-import Home from './Home'
-import Certificate from './Certificate';
-import Client from '../src/Client'
-import { BrowserRouter } from 'react-router-dom'
-import Skills from './Skills';
-import Experience from './Experience';
-import Technical from './Technical';
+import Card from './Components/Card'
+import Contact from './Components/Contact'
+import Home from './Components/Home'
+import Certificate from './Components/Certificate';
+import Client from './Components/Client'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Skills from './Components/Skills';
+import Experience from './Components/Experience';
+import Technical from './Components/Technical';
+import Idfc from './Idfc';
+import Cardinside from './Cardinside';
+import Smart from './Smart';
+import Trading from './Trading';
+import Transaction from './Transaction';
 
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Home />
-        <Skills/>
-        <Certificate/>
-        <Technical/>
-        <Card />
-        <Experience/>
-        <Client/>
-        <Contact />
 
+        <Routes>
+
+          <Route path='/' element={<Home />} />
+
+          <Route path='/Idfc' element={<Idfc/>} />
+          <Route path='/Cardinside' element={<Cardinside/>} />
+          <Route path='/Smart' element={<Smart/>} />
+          <Route path='/Trading' element={<Trading/>} />
+          <Route path='/Transaction' element={<Transaction/>} />
+
+        </Routes>
 
       </BrowserRouter>
 

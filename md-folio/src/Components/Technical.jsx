@@ -3,13 +3,13 @@ import React from "react";
 // import java from "../assets/img/java.png";
 // import project from "../assets/img/project.png";
 // import db from "../assets/img/database.png";
-import java from './Assets/images/icons8-java-60.png'
-import db from './Assets/images/icons8-database-60.png'
-import python from'./Assets/images/icons8-python-60.png'
-import setting from './Assets/images/icons8-setting-60.png'
-import sellcast from './Assets/images/icons8-sellcast.png'
-import cpu from './Assets/images/icons8-cpu-60.png'
-import list from './Assets/images/icons8-list-60.png'
+import java from '../Assets/images/icons8-java-60.png'
+import db from '../Assets/images/icons8-database-60.png'
+import python from'../Assets/images/icons8-python-60.png'
+import setting from '../Assets/images/icons8-setting-60.png'
+import sellcast from '../Assets/images/icons8-sellcast.png'
+import cpu from '../Assets/images/icons8-cpu-60.png'
+import list from '../Assets/images/icons8-list-60.png'
 
 
 
