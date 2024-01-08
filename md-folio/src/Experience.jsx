@@ -538,8 +538,8 @@ function Experience() {
                       </button>
                     </div>
                   </div>
-                  <p className="fs-4 py-4">Hexaware Technologies (2016-2018)</p>
-                  <hr className="py-5"></hr>
+                  <p className="fs-4 py-2 ">Hexaware Technologies (2016-2018)</p>
+                  <hr className="py-5"></ hr>
                 </div>
                 <div className="experience mt-5 mx-5 rounded-3 px-5">
                   <div className="row align-items-center justify-content-between">

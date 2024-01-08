@@ -3,7 +3,7 @@ import React from 'react'
 function Skills() {
     return (
         <div>
-            <section className='container-fluid my-5 py-5' id='summary'>
+            <section className='container-fluid my-5 py-5 px-5' id='summary'>
                 <h3 className='text-center text-danger'>LANGUAGES AND FRAMEWORK</h3>
                 <h4 className='text-center fw-bold pt-4'>SKILLS</h4>
                 <div className="row d-flex justify-content-between pt-3 mt-3">
