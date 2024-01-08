@@ -66,7 +66,7 @@ function Experience() {
               </div>
               </div>
               <div className="py-1 px-2 my-5 ">
-                <ul className="heading3  fw-bold">
+                <ul className="heading3">
                   <li>
                     Implemented React JS code to handle cross browser
                     compatibility issues in Mozilla, IE 7, 8, 9, Safari and FF.
@@ -182,7 +182,7 @@ function Experience() {
               </div>
               </div>
               <div className="py-1 px-2 my-5 ">
-                <ul className="heading3  fw-bold">
+                <ul className="heading3 ">
                   <li>
                     Implemented various screens for the front end using React.js
                     and used various predefined components from NPM (Node
@@ -295,7 +295,7 @@ function Experience() {
               </div>
               </div>
               <div className="py-1 px-2 my-5 ">
-                <ul className="heading3  fw-bold">
+                <ul className="heading3">
                   <li>
                     Used Python and Django to interface with the jQuery IJI and
                     manage the storage and deletion of content
