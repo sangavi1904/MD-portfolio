@@ -3,10 +3,16 @@ import React from "react";
 // import java from "../assets/img/java.png";
 // import project from "../assets/img/project.png";
 // import db from "../assets/img/database.png";
-import sett from "./Assets/images/setting.png"
-import java from "./Assets/images/java.png"
+import java from "./Assets/images/icons8-java-75.png"
 import project from "./Assets/images/project.png"
-import db from "./Assets/images/database.png"
+import db from "./Assets/images/icons8-database-75.png"
+import python from "./Assets/images/icons8-python-75.png"
+import setting from "./Assets/images/icons8-setting-75.png"
+import sellcast from "./Assets/images/icons8-sellcast.png"
+import cpu from "./Assets/images/icons8-cpu-75.png"
+import list from "./Assets/images/icons8-list-view-75.png"
+
+
 
 function Technical() {
   return (
@@ -23,7 +29,7 @@ function Technical() {
               <div className=" col-md-9 text-center">
                 <div className="icondiv mt-3">
                   <img
-                    src={sett}
+                    src={setting}
                     className="align-items-center  img-fluid"
                     alt=""
                   />
@@ -37,7 +43,7 @@ function Technical() {
             <div className="card techcard rounded-4  align-items-center zooming-effect">
               <div className=" col-md-9 text-center">
                 <div className="icondiv mt-3">
-                  <img src={project} alt="" />
+                  <img src={cpu} alt="" />
                 </div>
                 <h3 className="mt-2">Framework</h3>
                 <p className="mt-4">
@@ -77,7 +83,7 @@ function Technical() {
             <div className="card techcard rounded-4 align-items-center zooming-effect">
               <div className=" col-md-9 text-center">
                 <div className="icondiv mt-3">
-                  <img src={project} alt="" />
+                  <img src={list} alt="" />
                 </div>
                 <h3 className="mt-2">Project Management Tool</h3>
                 <p className="mt-4">JIRA, ClickUp</p>
@@ -88,7 +94,7 @@ function Technical() {
             <div className="card techcard rounded-4 align-items-center zooming-effect">
               <div className=" col-md-9 text-center">
                 <div className="icondiv mt-3">
-                  <img src={project} alt="" />
+                  <img src={sellcast} alt="" />
                 </div>
                 <h3 className="mt-2">CI/CD tools</h3>
                 <p className="mt-4">
@@ -101,7 +107,7 @@ function Technical() {
             <div className="card techcard rounded-4 align-items-center zooming-effect">
               <div className=" col-md-9 text-center">
                 <div className="icondiv mt-3">
-                  <img src={project} alt="" />
+                  <img src={setting} alt="" />
                 </div>
                 <h3 className="mt-2">Tools</h3>
                 <p className="mt-4">
@@ -114,7 +120,7 @@ function Technical() {
             <div className="card techcard rounded-4 align-items-center zooming-effect">
               <div className=" col-md-9 text-center">
                 <div className="icondiv mt-3">
-                  <img src={project} alt="" />
+                  <img src={python} alt="" />
                 </div>
 
                 <h3 className="mt-2">Web services Testing Tools</h3>
