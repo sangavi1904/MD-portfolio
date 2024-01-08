@@ -21,19 +21,19 @@ export default function Contact() {
                                     alt="..."
                                 />
                             </a>
-                            <div className="titlehead mb-2 p-2">
-                                <h4 className="titlehead-area p-0 mb-2">Venkatesan J</h4>
-                                <span className="titlehead-span mb-2 ">Software Engineer</span>
+                            <div className="titlehead mb-3 p-2">
+                                <h4 className="titlehead-area p-0 mb-3">Venkatesan J</h4>
+                                <span className="titlehead-span mb-4 ">Software Engineer</span>
                             </div>
-                            <div className="description mb-2">
-                                <p className="para mb-2" style={{ fontFamily: '"Poppins",sans-serif' }}>
+                            <div className="description mb-4">
+                                <p className="para mb-4" style={{ fontFamily: '"Poppins",sans-serif' }}>
                                     Want to get in touch on Developing? Here's how you can reach me! - HAPPY CONNECTING!
                                 </p>
-                                <span className='phone'>Phone: <a href="tel:+918667672605">+91-8667672605</a></span> <br />
-                                <span className='email'>Email: <a href="mailto:venkteshanj@axesstechnology.in">venkteshanj@axesstechnology.in</a></span>
+                                <div className='phone mb-4' style={{fontSize:"20px"}}>Phone: <a href="tel:+918667672605">+91-8667672605</a></div> 
+                                <div className='email' style={{fontSize:"20px"}}>Email: <a href="mailto:venkteshanj@axesstechnology.in">venkteshanj@axesstechnology.in</a></div>
                             </div>
-                            <div className="social-area mb-2">
-                                <div className="name mb-2" style={{ fontFamily: '""Montserrat", sans-serif;"' }}>My LinkedIn Profile</div>
+                            <div className="social-area mb-4">
+                                <div className="name mb-4" style={{ fontFamily: '""Montserrat", sans-serif;"' }}>My LinkedIn Profile</div>
                                 <div className="social-icon skill-share has-shadow mb-2">
                                     <a href="https://www.linkedin.com/in/venkteshanj" title="linkedin.">
                                         <i className="rbt feather-linkedin"></i>
@@ -42,7 +42,7 @@ export default function Contact() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-7">
+                    <div className="col-md-7 heading3">
                         <div className="card custom-card p-5" style={{ height: "850px" }}>
                             <form class="contact-form " style={{ fontFamily: '"Montserrat", sans-serif"' }}>
                                 <div class="form-group p-3">

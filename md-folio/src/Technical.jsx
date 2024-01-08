@@ -12,18 +12,21 @@ function Technical() {
   return (
     <div className="overflow-hidden" id="technicalskill">
        
-      <section className="container-fluid">
+      <section className="container">
         <div className="text-center mt-5">
-          <h1 style={{ color: "red" }}>TECHNICAL</h1>
-          <h3>EXCELLENCE</h3>
+        <h3 className='text-center' style={{color:"#f9004d"}}>TECHNICAL</h3>
+                <h4 className='title sec-title text-center mt-3'  style={{ color: "black" }}>EXCELLENCE</h4>
+        
+         
         </div>
-        <div className="row d-flex ">
-          <div className="col-md-3 mt-5 ">
+        <div className="row d-flex mt-5">
+          <div className="col-md-3 mt-5  ">
             <div className="card techcard rounded-4 align-items-center zooming-effect">
               <div className=" col-md-9 text-center">
-                <div className="icondiv mt-3">
+                <div className=" icondiv mt-3">
                   <img
                     src={sett}
+                    style={{backgroundColor:"red"}}
                     className="align-items-center  img-fluid"
                     alt=""
                   />

@@ -3,11 +3,11 @@ import React from 'react'
 function Skills() {
     return (
         <div>
-            <section className='container-fluid my-5 py-5' id='summary'>
-                <h3 className='text-center text-danger'>LANGUAGES AND FRAMEWORK</h3>
-                <h4 className='text-center fw-bold pt-4'>SKILLS</h4>
-                <div className="row d-flex justify-content-between pt-3 mt-3">
-                    <div className="col-md-2"><h6 className='fw-bold'>Front-end Development</h6>
+            <section className='container my-5 py-5 px-5'  id='summary'>
+                <h3 className='text-center ' style={{color:"#f9004d"}}>LANGUAGES AND FRAMEWORK</h3>
+                <h4 className='title sec-title text-center mt-4 '  style={{ color: "black" }}>SKILLS</h4>
+                <div className="row d-flex justify-content-between p-5 mt-3">
+                    <div className="col-md-2"><h6 style={{color:"#27272E", fontWeight:"700"}}>Front-end Development</h6>
                         <ul className="mt-3 card-li ">
                             <li>HTML5</li>
                             <li>CSS3</li>
@@ -16,7 +16,7 @@ function Skills() {
                             <li>JavaScript</li>
                             <li>ReactJS</li>
                         </ul></div>
-                    <div className="col-md-2"><h6 className='fw-bold'>Back-end Development</h6>
+                    <div className="col-md-2"><h6 style={{color:"#27272E", fontWeight:"700"}}>Back-end Development</h6>
                         <ul className="mt-3 card-li">
                             <li>Java</li>
                             <li>Spring Boot</li>
@@ -26,14 +26,14 @@ function Skills() {
                             <li>Django</li>
                             <li>Flask</li>
                         </ul></div>
-                    <div className="col-md-2"> <h6 className='fw-bold'>Database</h6>
+                    <div className="col-md-2"> <h6 style={{color:"#27272E", fontWeight:"bold"}}>Database</h6>
                         <ul className="mt-3 card-li">
                             <li>MongoDB</li>
                             <li>Oracle SQL</li>
                             <li>MySQL</li>
                             <li>Tailwind CSS</li>
                         </ul></div>
-                    <div className="col-md-2"> <h6 className='fw-bold'>Cloud Services</h6>
+                    <div className="col-md-2"> <h6 style={{color:"#27272E", fontWeight:"bold"}}>Cloud Services</h6>
                         <ul className="mt-3 card-li">
                             <li>AWS (Amazon Web Services)</li>
                             <li>EC2 (Elastic Compute Cloud)</li>
@@ -45,7 +45,7 @@ function Skills() {
                             <li>Firebase</li>
                         </ul>
                     </div>
-                    <div className="col-md-2 "><h6 className='fw-bold'>Testing and Automation</h6>
+                    <div className="col-md-2 "><h6 style={{color:"#27272E", fontWeight:"bold"}}>Testing and Automation</h6>
                         <ul className="mt-3 card-li">
                             <li>Selenium</li>
                             <li>Cucumber</li>
@@ -56,14 +56,14 @@ function Skills() {
                     </div>
                 </div>
                 <div className="row d-flex justify-content-center mt-3">
-                    <div className="col-md-3"><h6 className='fw-bold'>Machine Learning and Artificial Intelligence</h6>
+                    <div className="col-md-3"><h6 style={{color:"#27272E", fontWeight:"bold"}}>Machine Learning and Artificial Intelligence</h6>
                         <ul className="mt-3 card-li ">
                             <li>Python</li>
                             <li>scikit-learn</li>
                             <li>TensorFlow</li>
                             <li>PyTorch</li>
                         </ul></div>
-                    <div className="col-md-3"><h6 className='fw-bold'>DevOps</h6>
+                    <div className="col-md-3"><h6 style={{color:"#27272E", fontWeight:"bold"}}>DevOps</h6>
                         <ul className="mt-3 card-li">
                             <li>Git</li>
                             <li>Jenkins</li>
@@ -71,13 +71,13 @@ function Skills() {
                             <li>Kubernetes</li>
                             <li>Ansible</li>
                         </ul></div>
-                    <div className="col-md-3"><h6 className='fw-bold'>Java Frameworks</h6>
+                    <div className="col-md-3"><h6 style={{color:"#27272E", fontWeight:"bold"}}>Java Frameworks</h6>
                         <ul className="mt-3 card-li">
                             <li>Spring Boot</li>
                             <li>Spring MVC</li>
                             <li>Hibernate</li>
                         </ul></div>
-                    <div className="col-md-3"> <h6 className='fw-bold'>Other Tools</h6>
+                    <div className="col-md-3"> <h6 style={{color:"#27272E", fontWeight:"bold"}}>Other Tools</h6>
                         <ul className="mt-3 card-li">
                             <li>JIRA</li>
                             <li>Bitbucket</li>

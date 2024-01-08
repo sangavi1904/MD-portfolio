@@ -14,7 +14,7 @@ function Client() {
             <div className="container" >
                 <div className="carousel p-5 " >
                     <div id="carouselExampleIndicators" class="carousel slide">
-                        <div class="carousel-indicators">
+                        <div class="carousel-indicators ">
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style={{ backgroundColor: "red" }}></button>
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" style={{ backgroundColor: "red" }}></button>
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" style={{ backgroundColor: "red" }}></button>
@@ -103,7 +103,7 @@ function Client() {
 
                                                 </div>
                                                 <div class="seperator"></div>
-                                                <p class="description">
+                                                <p class="description heading3 ">
                                                     I was blown away by Venkatesan’s Full Stack Web Developer skillset, which resulted in a game-changing experience for my business. Working with him was a seamless collaboration, and his expertise was unparalleled. The communication with him was easy, He was proactive giving ideas of how to do a better job with web app development, and like I have said, the final result was excellent.		                </p>
                                             </div>
                                         </div>
@@ -295,6 +295,10 @@ function Client() {
                         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
+                        </button>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
                         </button>
                     </div>
                 </div>

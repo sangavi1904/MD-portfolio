@@ -4,15 +4,15 @@ import Certificate from './Certificate'
 
 
 function Home() {
-  
- return (
-        
+
+    return (
+
         <div>
 
 
             <div>
                 <nav class="navbar navbar-expand-lg " id='home'>
-                    <div class="container-fluid bg-body-tertiary home-nav">
+                    <div class="container-fluid bg-body-tertiary home-nav border-bottom">
                         <Link class="navbar-brand" to="#">
                             <img src="https://venkatesanj.com/wp-content/uploads/2023/06/logo-vertical-2.png" alt=" navlogo" />
                         </Link>
@@ -21,48 +21,48 @@ function Home() {
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto mb-3 p-4 mb-lg-0 text-center">
-                                <li class="nav-item">
+                                <li class="nav-item heading5">
                                     {/* <Link class="nav-link active" aria-current="page" to=''>Home</Link> */}
-                                    <a class="nav-link active" aria-current="page" href='#home'> Home</a> 
+                                    <a class="nav-link active px-3" aria-current="page" href='#home'> Home</a>
                                 </li>
-                                <li class="nav-item">
-                                    {/* <Link class="nav-link active" aria-current="page" to="#">Certificate</Link> */}
-                                    <a class="nav-link active" aria-current="page" href="#summary">Summary</a>
+                                <li class="nav-item heading5">
+                                    <a class="nav-link active px-3 " aria-current="page" href="#summary">Summary</a>
                                 </li>
-                                <li class="nav-item">
-                                    {/* <Link class="nav-link active" aria-current="page" to="#">Certificate</Link> */}
-                                    <a class="nav-link active" aria-current="page" href="#certificate">Certificate</a>
-                                </li>
-                                <li class="nav-item">
+                                {/* <li class="nav-item heading5">
+                                    <a class="nav-link active " aria-current="page" href="#certificate">Certificate</a>
+                                </li> */}
+                                <li class="nav-item heading5 ">
                                     {/* <Link class="nav-link active" aria-current="page" to="#">Testimonial</Link> */}
-                                    <a class="nav-link active" aria-current="page" href="#technicalskill">Technical Skill</a>
+                                    <a class="nav-link active px-3" aria-current="page" href="#technicalskill">Technical Skills</a>
 
                                 </li>
-                                <li class="nav-item">
-                                    {/* <Link class="nav-link active" aria-current="page" to="#">Card</Link> */}
-                                    <a class="nav-link active" aria-current="page" href="#card">My Project</a>
+                                {/* <li class="nav-item heading5">
+                                    <a class="nav-link active " aria-current="page" href="#card">My Project</a>
 
-                                </li>
-                                <li class="nav-item">
+                                </li> */}
+                                <li class="nav-item heading5">
                                     {/* <Link class="nav-link active" aria-current="page" to="#">Resume</Link> */}
-                                    <a class="nav-link active" aria-current="page" href="#resume">Resume</a>
-                                    
+                                    <a class="nav-link active px-3" aria-current="page" href="#resume">Resume</a>
+
                                 </li>
-                               
-                                <li class="nav-item">
+
+                                <li class="nav-item heading5 ">
                                     {/* <Link class="nav-link active" aria-current="page" to="#">Contact</Link> */}
-                                    <a class="nav-link active" aria-current="page" href="#testimonial">Testimonial</a>
+                                    <a class="nav-link active px-3" aria-current="page" href="#testimonial">Testimonial</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item heading5">
                                     {/* <Link class="nav-link active" aria-current="page" to="#">Contact</Link> */}
-                                    <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
+                                    <a class="nav-link active px-3" aria-current="page" href="#contact">Contact</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </nav>
+               
             </div>
+           
             {/* navber end */}
+            
 
 
             <div className="container mt-4 pt-4">
@@ -76,7 +76,7 @@ function Home() {
                         <div>
                             <p className='heading2 mt-4 pt-4'>Hi, I’m
                                 <span className='heading mx-3'>Venkatesan J a</span>Developer  </p>
-                                {/* <p>Venkatesan  <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p> */}
+                            {/* <p>Venkatesan  <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p> */}
 
                         </div>
 
@@ -93,12 +93,12 @@ function Home() {
                             exciting world of software development and technology innovation.</p>
 
                         <div className='row pt-3 mt-3 '>
-                            <div className='col-6' style={{color:"#1e2125", fontWeight:"500"}}>
+                            <div className='col-6' style={{ color: "#1e2125", fontWeight: "500" }}>
                                 <p>MY LINKEDIN PROFILE</p>
                                 <Link to="#">
                                     <img src="https://venkatesanj.com/wp-content/uploads/2023/07/Springboot.png" alt="LLinkedin logo" className='w-25' /></Link>
                             </div>
-                            <div className='col-6' style={{color:"#1e2125", fontWeight:"500"}}>
+                            <div className='col-6' style={{ color: "#1e2125", fontWeight: "500" }}>
                                 <p>BEST SKILLED IN</p>
                                 <div>
                                     <Link to="#">

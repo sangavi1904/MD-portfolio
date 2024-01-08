@@ -8,13 +8,15 @@ function Certificate() {
 
 
             <div className='container py-5 my-5 overflow-hidden' id='certificate'>
-                <div className='text-center'>
-                    <h1 className='heading4'>CERTIFICATIONS</h1>
-                </div>
+               
+                <h3 className='text-center' style={{color:"#f9004d"}}>CERTIFICATIONS</h3>
+                
+
+               
 
                 <div className='row d-flex justify-content-evenly mt-4 pt-4'>
                     <div className='col-md-5 certification pt-3 mt-3'>
-                        <div className='text-center'>
+                        <div className='text-center heading5'>
                             <h2 className='pt-4 mt-4'>CERTIFICATE</h2>
                             <p>OF COURSE COMPLETION</p>
 
@@ -26,7 +28,7 @@ function Certificate() {
                         </div>
                     </div>
                     <div className='col-md-5 certification mt-3 pt-3'>
-                        <div className='text-center'>
+                        <div className='text-center heading5'>
                             <h2 className='pt-4 mt-4'>CERTIFICATE</h2>
                             <p>OF COURSE COMPLETION</p>
 

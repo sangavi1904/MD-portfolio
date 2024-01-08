@@ -3,12 +3,13 @@ import React from "react";
 function Experience() {
   return (
     <div className="overflow-hidden" id="resume">
-         <div className="text-md-center mt-3 pt-3">
-            <h3>7+ YEARS OF EXPERIENCE</h3>
-            <h3>My Resume</h3>
+         <div className="text-md-center mt-5">
+         <span class="subtitle sub-title" style={{ fontFamily: '"Montserrat", sans-serif' }}>7+ YEARS OF EXPERIENCE</span>
+                    <h2 class="title sec-title" style={{ color: "black" }}>My Resume
+                    </h2>
         </div>
         <div className="row justify-content-md-center  mt-5">
-     <div className="col-md-11 nav-div  rounded-4">
+     <div className="col-md-11 nav-div exp heading4 rounded-4">
       <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
         <li class="nav-item" role="presentation">
           <button
@@ -63,7 +64,7 @@ function Experience() {
                   Chennai
                 </button>
               </div>
-              <div className="py-3 px-5 my-5 ">
+              <div className="py-3 my-5 heading3">
                 <ul>
                   <li>
                     Implemented React JS code to handle cross browser
@@ -178,7 +179,7 @@ function Experience() {
                   Chennai
                 </button>
               </div>
-              <div className="py-3 px-5 my-5 ">
+              <div className="py-3 my-5 heading3 ">
                 <ul>
                   <li>
                     Implemented various screens for the front end using React.js
@@ -290,7 +291,7 @@ function Experience() {
                   Chennai
                 </button>
               </div>
-              <div className="py-3 px-5 my-5 ">
+              <div className="py-3 my-5 heading3 ">
                 <ul>
                   <li>
                     Used Python and Django to interface with the jQuery IJI and
@@ -422,7 +423,7 @@ function Experience() {
                 </div>
 
                 <hr className="mt-4"></hr>
-                <p className=" my-3 py-3 px-3 professinal-p">
+                <p className=" my-3 py-3 px-3 professinal-p heading3">
                   I am a skilled software developer with expertise in Java and
                   Python, specializing in building robust and scalable
                   applications. With a strong foundation in Java Spring Boot and
@@ -457,7 +458,7 @@ function Experience() {
                 </div>
 
                 <hr className="mt-4"></hr>
-                <p className="my-3 py-3 px-3 professinal-p">
+                <p className="my-3 py-3 px-3 professinal-p heading3">
                   I am a skilled software developer with expertise in Java and
                   Python, specializing in building robust and scalable
                   applications. With a strong foundation in Java Spring Boot and
