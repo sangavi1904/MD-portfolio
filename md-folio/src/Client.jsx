@@ -146,7 +146,7 @@ function Client() {
                         </div>
                         <div className="my-3 border"></div>
                         <div class="seperator"></div>
-                        <p class="description">
+                        <p class="description heading3">
                           I was blown away by Venkatesan’s Full Stack Web
                           Developer skillset, which resulted in a game-changing
                           experience for my business. Working with him was a
@@ -277,7 +277,7 @@ function Client() {
                         </div>
                         <div className="my-3 border"></div>
                         <div class="seperator"></div>
-                        <p class="description">
+                        <p class="description heading3 active">
                           I was blown away by Venkatesan’s Full Stack Web
                           Developer skillset, which resulted in a game-changing
                           experience for my business. Working with him was a
@@ -408,7 +408,7 @@ function Client() {
                         </div>
                         <div className="my-3 border"></div>
                         <div class="seperator"></div>
-                        <p class="description">
+                        <p class="description heading3">
                           I was blown away by Venkatesan’s Full Stack Web
                           Developer skillset, which resulted in a game-changing
                           experience for my business. Working with him was a

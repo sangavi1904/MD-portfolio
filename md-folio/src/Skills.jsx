@@ -3,10 +3,10 @@ import React from 'react'
 function Skills() {
     return (
         <div>
-            <section className='container my-5 py-5 px-5'  id='summary'>
+            <section className='container my-5  px-5'  id='summary'>
                 <h3 className='text-center ' style={{color:"#f9004d"}}>LANGUAGES AND FRAMEWORK</h3>
                 <h4 className='title sec-title text-center mt-4 '  style={{ color: "black" }}>SKILLS</h4>
-                <div className="row d-flex justify-content-between p-5 mt-3">
+                <div className="row d-flex justify-content-between px-5 mt-3">
                     <div className="col-md-2"><h6 style={{color:"#27272E", fontWeight:"700"}}>Front-end Development</h6>
                         <ul className="mt-3 card-li ">
                             <li>HTML5</li>
@@ -55,8 +55,9 @@ function Skills() {
                         </ul>
                     </div>
                 </div>
-                <div className="row d-flex justify-content-center mt-3">
-                    <div className="col-md-3"><h6 style={{color:"#27272E", fontWeight:"bold"}}>Machine Learning and Artificial Intelligence</h6>
+                <div className="row d-flex justify-content-between px-5 mt-3">
+                    <div className="col-md-2">
+                        <h6 style={{color:"#27272E", fontWeight:"700"}}>Machine Learning and Artificial Intelligence</h6>
                         <ul className="mt-3 card-li ">
                             <li>Python</li>
                             <li>scikit-learn</li>

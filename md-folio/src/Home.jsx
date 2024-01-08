@@ -23,17 +23,17 @@ function Home() {
                             <ul class="navbar-nav ms-auto mb-3 p-4 mb-lg-0 text-center">
                                 <li class="nav-item heading5">
                                     {/* <Link class="nav-link active" aria-current="page" to=''>Home</Link> */}
-                                    <a class="nav-link active px-3" aria-current="page" href='#home'> Home</a>
+                                    <a class="nav-link active px-3" aria-current="page" id='name-nav' href='#home'> Home</a>
                                 </li>
                                 <li class="nav-item heading5">
-                                    <a class="nav-link active px-3 " aria-current="page" href="#summary">Summary</a>
+                                    <a class="nav-link active px-3 " aria-current="page" id='name-nav' href="#summary">Summary</a>
                                 </li>
                                 {/* <li class="nav-item heading5">
                                     <a class="nav-link active " aria-current="page" href="#certificate">Certificate</a>
                                 </li> */}
                                 <li class="nav-item heading5 ">
                                     {/* <Link class="nav-link active" aria-current="page" to="#">Testimonial</Link> */}
-                                    <a class="nav-link active px-3" aria-current="page" href="#technicalskill">Technical Skills</a>
+                                    <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#technicalskill">Technical Skills</a>
 
                                 </li>
                                 {/* <li class="nav-item heading5">
@@ -42,17 +42,17 @@ function Home() {
                                 </li> */}
                                 <li class="nav-item heading5">
                                     {/* <Link class="nav-link active" aria-current="page" to="#">Resume</Link> */}
-                                    <a class="nav-link active px-3" aria-current="page" href="#resume">Resume</a>
+                                    <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#resume">Resume</a>
 
                                 </li>
 
                                 <li class="nav-item heading5 ">
                                     {/* <Link class="nav-link active" aria-current="page" to="#">Contact</Link> */}
-                                    <a class="nav-link active px-3" aria-current="page" href="#testimonial">Testimonial</a>
+                                    <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#testimonial">Testimonial</a>
                                 </li>
                                 <li class="nav-item heading5">
                                     {/* <Link class="nav-link active" aria-current="page" to="#">Contact</Link> */}
-                                    <a class="nav-link active px-3" aria-current="page" href="#contact">Contact</a>
+                                    <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#contact">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -65,11 +65,14 @@ function Home() {
             
 
 
-            <div className="container-fluid mt-4 pt-4">
+            <div className="container mt-4 pt-4">
                 <div className="row mt-">
-                    <div className="col-md-6 mt-5 pt-3 ">
+                    
+                    <div className="col-md-6 mt-5 pt-3  ">
+                    <div className="col-md-10 mx-auto">
                         <div className='rounded-3 md-img-shadow mx-2'>
                             <img src="https://venkatesanj.com/wp-content/uploads/2023/06/Image.png" className='img-fluid' alt="md-img" />
+                        </div>
                         </div>
                     </div>
                     <div className="col-md-6">

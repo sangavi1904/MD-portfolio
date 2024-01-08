@@ -7,7 +7,7 @@ function Certificate() {
         <div>
 
 
-            <div className='container py-5 my-5 overflow-hidden' id='certificate'>
+            <div className='container overflow-hidden' id='certificate'>
                
                 <h3 className='text-center' style={{color:"#f9004d"}}>CERTIFICATIONS</h3>
                 
@@ -20,23 +20,23 @@ function Certificate() {
                             <h2 className='pt-4 mt-4'>CERTIFICATE</h2>
                             <p>OF COURSE COMPLETION</p>
 
-                            <p className='pt-4 mt-3'>Proudly Presented To </p>
-                            <h4>Mr. VENKATESAN J</h4>
+                            <p>Proudly Presented To </p>
+                            <h4 style={{color:"#ff014f"}}>Mr. VENKATESAN J</h4>
                             <p>Certified SQL developer, ORACLE</p>
                             <hr />
-                            <button className='certi-bts rounded-4'>2020</button>
+                            <button className='certi-bts rounded-4 mt-4'>2020</button>
                         </div>
                     </div>
-                    <div className='col-md-5 certification mt-3 pt-3'>
+                    <div className='col-md-5 certification  mt-3 '>
                         <div className='text-center heading5'>
                             <h2 className='pt-4 mt-4'>CERTIFICATE</h2>
                             <p>OF COURSE COMPLETION</p>
 
-                            <p className='pt-4 mt-3'>Proudly Presented To </p>
+                            <p>Proudly Presented To </p>
                             <h4>Mr. VENKATESAN J</h4>
                             <p>AWS Solutions Architect, Amazon Web Services</p>
                             <hr />
-                            <button className='certi-bts rounded-4'>2022</button>
+                            <button className='certi-bts rounded-4 mt-4'>2022</button>
                         </div>
                     </div>
                 </div>

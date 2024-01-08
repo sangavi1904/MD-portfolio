@@ -3,14 +3,14 @@ import React from "react";
 function Experience() {
   return (
     <div className="overflow-hidden" id="resume">
-         <div className="text-md-center mt-5">
+         <div className="text-md-center text-center mt-5">
          <span class="subtitle sub-title" style={{ fontFamily: '"Montserrat", sans-serif' }}>7+ YEARS OF EXPERIENCE</span>
                     <h2 class="title sec-title" style={{ color: "black" }}>My Resume
                     </h2>
         </div>
         <div className="row justify-content-md-center  mt-5">
-     <div className="col-md-11 nav-div exp heading4 rounded-4">
-      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+     <div className="col-md-11 nav-div exp heading4 rounded-4 ">
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" >
         <li class="nav-item" role="presentation">
           <button
             class="nav-link active"
@@ -507,7 +507,7 @@ function Experience() {
                 </div>
 
                 <hr className="mt-4"></hr>
-                <p className="fs-4 py-5 px-3 my-5 headine3">
+                <p className="my-3 py-3 px-3 heading3">
                   I am a skilled software developer with expertise in Java and
                   Python, specializing in building robust and scalable
                   applications. With a strong foundation in Java Spring Boot and
@@ -541,7 +541,7 @@ function Experience() {
                       </button>
                     </div>
                   </div>
-                  <p className="fs-4 py-2 ">Hexaware Technologies (2016-2018)</p>
+                  <p className="py-2 ">Hexaware Technologies (2016-2018)</p>
                   <hr className="py-5"></ hr>
                 </div>
                 <div className="experience mt-5 mx-5 rounded-3 px-5">
@@ -555,7 +555,7 @@ function Experience() {
                       </button>
                     </div>
                   </div>
-                  <p className="fs-4 py-4">Hexaware Technologies (2016-2018)</p>
+                  <p className="py-4">Hexaware Technologies (2016-2018)</p>
                   <hr className="py-5"></hr>
                 </div>
                 <div className="experience mt-5 mx-5 rounded-3 px-5">
@@ -569,7 +569,7 @@ function Experience() {
                       </button>
                     </div>
                   </div>
-                  <p className="fs-4 py-4">Hexaware Technologies (2016-2018)</p>
+                  <p className="py-4">Hexaware Technologies (2016-2018)</p>
                   <hr className="py-5"></hr>
                 </div>
               </div>

@@ -20,8 +20,9 @@ function Technical() {
        
       <section className="container">
         <div className="text-center mt-5">
-        <h3 className='text-center' style={{color:"#f9004d"}}>TECHNICAL</h3>
-                <h4 className='title sec-title text-center mt-3'  style={{ color: "black" }}>EXCELLENCE</h4>
+        <span class="subtitle sub-title mt-3" style={{ fontFamily: '"Montserrat", sans-serif' }}>TECHNICAL</span>
+                    <h2 class="title sec-title" style={{ color: "black" }}>EXCELLENCE
+                    </h2>
         
          
         </div>
