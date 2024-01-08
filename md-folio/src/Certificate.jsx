@@ -15,7 +15,7 @@ function Certificate() {
                
 
                 <div className='row d-flex justify-content-evenly mt-4 pt-4'>
-                    <div className='col-md-5 certification pt-3 mt-3'>
+                    <div className='col-md-5 certification mt-3'>
                         <div className='text-center heading5'>
                             <h2 className='pt-4 mt-4'>CERTIFICATE</h2>
                             <p>OF COURSE COMPLETION</p>
@@ -27,13 +27,13 @@ function Certificate() {
                             <button className='certi-bts rounded-4 mt-4'>2020</button>
                         </div>
                     </div>
-                    <div className='col-md-5 certification  mt-3 '>
+                    <div className='col-md-5 certification mt-3 '>
                         <div className='text-center heading5'>
                             <h2 className='pt-4 mt-4'>CERTIFICATE</h2>
                             <p>OF COURSE COMPLETION</p>
 
                             <p>Proudly Presented To </p>
-                            <h4>Mr. VENKATESAN J</h4>
+                            <h4 style={{color:"#ff014f"}}>Mr. VENKATESAN J</h4>
                             <p>AWS Solutions Architect, Amazon Web Services</p>
                             <hr />
                             <button className='certi-bts rounded-4 mt-4'>2022</button>

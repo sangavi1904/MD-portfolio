@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@1,600&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 :root {
   --heading-Color: #ff014f;
@@ -66,6 +67,14 @@
 
 .heading5 {
   font-family: 'Roboto', sans-serif;
+  letter-spacing: .2px;
+  font-weight: 500;
+  line-height: 2;
+  font-size: 17px;
+  word-spacing: 8px;
+}
+.heading6 {
+  font-family: 'Josefin Sans', sans-serif;
   letter-spacing: .2px;
   font-weight: 500;
   line-height: 2;
@@ -515,7 +524,7 @@
   /* color: white !important; */
 }
 
-.exp button:hover{
+.exp button:hover ,.exp button.active{
   background: linear-gradient(145deg, #6a67ce, #fc636b);
 
   transition: transform 0.3s ease;
@@ -535,7 +544,7 @@
 .nav-button {
   display: inline-block;
   margin-left: 10px;
-  padding: 10px 100px;
+  padding: 10px 50px;
   font-size: 40px;
   text-align: center;
   text-decoration: none;
@@ -565,4 +574,11 @@
 .card-li li {
   padding-top: 12px;
   font-family: 'Roboto', sans-serif;
+}
+
+@media(max-width:768px){
+  .heading2, .heading{
+    font-size: 30px;
+    text-align: center;
+  }
 }

@@ -2,7 +2,8 @@ import React from "react";
 
 function Experience() {
   return (
-    <div className="overflow-hidden" id="resume">
+   <div className="container">
+     <div className="overflow-hidden" id="resume">
          <div className="text-md-center text-center mt-5">
          <span class="subtitle sub-title" style={{ fontFamily: '"Montserrat", sans-serif' }}>7+ YEARS OF EXPERIENCE</span>
                     <h2 class="title sec-title" style={{ color: "black" }}>My Resume
@@ -21,7 +22,7 @@ function Experience() {
             role="tab"
             aria-controls="pills-home"
             aria-selected="true"
-            className="mt-4  text-md-center rounded-4 nav-button"
+            className="mt-4 mx-5 text-md-center rounded-4 nav-button"
           >
         <h4>Experience</h4>
           </button>
@@ -488,13 +489,13 @@ function Experience() {
           aria-labelledby="pills-profile-tab"
           tabindex="0"
         >
-        <section className="container-fluid">
+        <section className="container">
         <div className="row">
-          <div className="col-md-6  container mt-5">
+          <div className="col-md-6 container mt-5">
             <h4 className="text-danger mt-5">2016-2023</h4>
-            <h2>Professional Summary</h2>
+            <h2 className="heading6">Professional Summary</h2>
             <div className="d-flex justify-content-center my-5">
-              <div className=" professinal experience  px-5 mx-5 rounded-3">
+              <div className=" professinal experience  px-5 rounded-3">
                 <div className="row align-items-center justify-content-between">
                   <div className="col-md-6 pt-4 mt-3">
                     <h5>Professional Summary</h5>
@@ -527,10 +528,10 @@ function Experience() {
           </div>
           <div className="col-md-6  mt-5">
             <h4 className="text-danger mt-5 ">2016-2023</h4>
-            <h2>Job Experience</h2>
-            <div className=" px-2 mx-5">
+            <h2 className="heading6 ">Job Experience</h2>
+            <div className=" px-2">
               <div className="rounded-3">
-                <div className="experience mt-5 mx-5 rounded-3 px-5">
+                <div className="experience mt-5 rounded-3 px-5">
                   <div className="row align-items-center justify-content-between">
                     <div className="col-md-6 pt-4 mt-3">
                       <h5>Professional Summary</h5>
@@ -544,7 +545,7 @@ function Experience() {
                   <p className="py-2 ">Hexaware Technologies (2016-2018)</p>
                   <hr className="py-5"></ hr>
                 </div>
-                <div className="experience mt-5 mx-5 rounded-3 px-5">
+                <div className="experience mt-5 rounded-3 px-5">
                   <div className="row align-items-center justify-content-between">
                     <div className="col-md-6 pt-4 mt-3">
                       <h5>Professional Summary</h5>
@@ -558,7 +559,7 @@ function Experience() {
                   <p className="py-4">Hexaware Technologies (2016-2018)</p>
                   <hr className="py-5"></hr>
                 </div>
-                <div className="experience mt-5 mx-5 rounded-3 px-5">
+                <div className="experience mt-5 rounded-3 px-5">
                   <div className="row align-items-center justify-content-between">
                     <div className="col-md-6 pt-4 mt-3">
                       <h5>Professional Summary</h5>
@@ -580,6 +581,8 @@ function Experience() {
         </div>
       </div>
     </div>
+
+   </div>
   );
 }
 

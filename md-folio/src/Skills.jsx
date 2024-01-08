@@ -6,7 +6,7 @@ function Skills() {
             <section className='container my-5  px-5'  id='summary'>
                 <h3 className='text-center ' style={{color:"#f9004d"}}>LANGUAGES AND FRAMEWORK</h3>
                 <h4 className='title sec-title text-center mt-4 '  style={{ color: "black" }}>SKILLS</h4>
-                <div className="row d-flex justify-content-between px-5 mt-3">
+                <div className="row d-flex justify-content-between px-md-5 mt-3">
                     <div className="col-md-2"><h6 style={{color:"#27272E", fontWeight:"700"}}>Front-end Development</h6>
                         <ul className="mt-3 card-li ">
                             <li>HTML5</li>
@@ -55,7 +55,7 @@ function Skills() {
                         </ul>
                     </div>
                 </div>
-                <div className="row d-flex justify-content-between px-5 mt-3">
+                <div className="row d-flex justify-content-between px-md-5 mt-3">
                     <div className="col-md-2">
                         <h6 style={{color:"#27272E", fontWeight:"700"}}>Machine Learning and Artificial Intelligence</h6>
                         <ul className="mt-3 card-li ">
