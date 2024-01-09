@@ -406,10 +406,10 @@ function Experience() {
               </div>
             </div>
         </div>
-      </section>
+      </section> 
       <section>
-        <div className="row">
-          <div className="col-md-5  container mt-5 pt-5">
+        <div className="col-md-5  container mt-5 pt-5">
+          <div className="row">
             <div className="d-flex justify-content-center mt-5">
               <div className=" professinal experience  px-5 mx-5 rounded-3">
                 <div className="row align-items-center justify-content-between">

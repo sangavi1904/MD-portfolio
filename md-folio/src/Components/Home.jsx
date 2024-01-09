@@ -381,7 +381,7 @@ function Home() {
 
             {/* Card-Start */}
             <div>
-                <div class="elementor-widget-container" id='card' style={{ margin: "3rem" }}>
+                <div class="elementor-widget-container " id='card' style={{ margin: "3rem" }}>
                     <div class="section-title text-center aos-init aos-animate" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true">
                         <span class="subtitle sub-title" style={{ fontFamily: '"Montserrat", sans-serif' }}>VISIT MY PROJECTS</span>
                         <h2 class="title sec-title" style={{ color: "black", }}>MY PROJECTS
@@ -389,9 +389,9 @@ function Home() {
                     </div>
                 </div>
                 <div className='container'>
-                    <div className='row gx-5 gy-4'>
+                    <div className='row gy-4'>
                         <div className='col-md-4'>
-                            <div class="card custom-card p-5" >
+                            <div class="card custom-card px-md-5" >
 
                                 <a href="/">
                                     <img src="https://venkatesanj.com/wp-content/uploads/2023/07/12085313_20944139-340x250.jpg"
@@ -532,7 +532,7 @@ function Home() {
                     </div>
                     <div className="row justify-content-md-center  mt-5">
                         <div className="col-md-11 nav-div exp heading4 rounded-4 ">
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" >
+                            <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist" >
                                 <li class="nav-item" role="presentation">
                                     <button
                                         class="nav-link active"
@@ -543,7 +543,7 @@ function Home() {
                                         role="tab"
                                         aria-controls="pills-home"
                                         aria-selected="true"
-                                        className="mt-4 mx-5 text-md-center rounded-4 nav-button"
+                                        className="mt-4 mx-md-5 text-md-center rounded-4 nav-button"
                                     >
                                         <h4 className='heading6'>Experience</h4>
                                     </button>
@@ -558,8 +558,9 @@ function Home() {
                                         role="tab"
                                         aria-controls="pills-profile"
                                         aria-selected="true"
-                                        className=" text-md-center rounded-4  mt-4 nav-button"
+                                        className="mt-4 mx-md-5 text-md-center rounded-4 nav-button"
                                     >
+                                        
                                         <h4 className='heading6'>Professional</h4>
                                     </button>
                                 </li>
@@ -932,7 +933,7 @@ function Home() {
                                 <div className="row">
                                     <div className="col-md-5  container mt-5 pt-5">
                                         <div className="d-flex justify-content-center mt-5">
-                                            <div className=" professinal experience  px-5 mx-5 rounded-3">
+                                            <div className=" professinal experience p-3 m-3 rounded-3">
                                                 <div className="row align-items-center justify-content-between">
                                                     <div className="col-md-8 pt-4 mt-3">
                                                         <h5 className="my-4 heading6" >
@@ -967,7 +968,7 @@ function Home() {
                                     </div>
                                     <div className="col-md-5  container mt-5 pt-5">
                                         <div className="d-flex justify-content-center mt-5">
-                                            <div className=" professinal experience  px-5 mx-5 rounded-3">
+                                            <div className=" professinal experience  p-3 m-3 rounded-3">
                                                 <div className="row align-items-center justify-content-between">
                                                     <div className="col-md-8 pt-4 mt-3">
                                                         <h5 className="my-4 heading6">
@@ -1132,12 +1133,12 @@ function Home() {
                     </div>
                 </div>
                 <div className="container">
-                    <div className="carousel p-5 ">
+                    <div className="carousel ">
                         <div id="carouselExampleIndicators" class="carousel slide">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <div className="row">
-                                        <div className="col-md-4">
+                                    <div className="row p-3">
+                                        <div className="col-md-4 mb-5">
                                             <div className="client h-100">
                                                 <div className="inner h-100">
                                                     <div className="card-info h-100">
@@ -1595,7 +1596,7 @@ function Home() {
                     </div>
                 </div>
                 <div className="container mt-5">
-                    <div className="row gx-5">
+                    <div className="row gx-md-5">
                         <div className="col-md-5">
                             <div className="card custom-card p-5" style={{ height: "850px" }}>
                                 <a href="/">
