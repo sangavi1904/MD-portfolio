@@ -1,14 +1,15 @@
 import React from 'react'
+import trading from './Assets/images/trading-img.jpg'
 
  
 const Trading = () => {
-    const imageUrl = 'https://venkatesanj.com/wp-content/uploads/2023/07/9464140_36136-800x600.jpg'; 
+    const imageUrl ={trading}
 
     return (
         <div className="container py-5 my-5 px-5 heading3" style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', borderRadius: '15px' }}>
       <div className="row align-items-center">
       <div className="col-md-6 text-center mt-4">
-                    <img src={imageUrl} alt="Company Logo" className="img-fluid w-75 border-4" style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', borderRadius: '15px' }} />
+                    <img src={trading} alt="Company Logo" className="img-fluid w-75 border-4" style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', borderRadius: '15px' }} />
                 </div>
 
                 <div className="col-md-6">

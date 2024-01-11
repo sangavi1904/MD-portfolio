@@ -8,15 +8,21 @@ import sellcast from '../Assets/images/icons8-sellcast.png'
 import cpu from '../Assets/images/icons8-cpu-60.png'
 import list from '../Assets/images/icons8-list-60.png'
 import Scroll from './Scroll'
-// import linked from '../src/Assets/images/Linkedin1.png'
-// import reactnative from '../src/Assets/images/React native.png'
-// import angular from '../src/Assets/images/Angular.png'
-// import spring from '../src/Assets/images/Spring boot.png'
 import linked from '../Assets/images/Linkedin1.png'
 import angular from '../Assets/images/Angular.png'
 import reactnative from '../Assets/images/React native.png'
 import spring from '../Assets/images/Spring boot.png'
 import Typed from './Typed'
+import navimg from '../Assets/images/md-nav-img.png'
+import headimg from '../Assets/images/md-img.png'
+import bankimg from '../Assets/images/bank-img.jpg'
+import billimg from '../Assets/images/bills-img.jpg'
+import jewelimg from '../Assets/images/jewelers-img.jpg'
+import tradingimg from '../Assets/images/trading-img.jpg'
+import transimg from '../Assets/images/transaction-img.jpg'
+import testimg from '../Assets/images/testi-img.png'
+import contactimg from '../Assets/images/contact1.png'
+
 
 
 function Home() {
@@ -28,7 +34,7 @@ function Home() {
                 <nav class="navbar navbar-expand-lg " id='home'>
                     <div class="container-fluid bg-body-tertiary home-nav border-bottom">
                         <Link class="navbar-brand" to="#">
-                            <img src="https://venkatesanj.com/wp-content/uploads/2023/06/logo-vertical-2.png" alt=" navlogo" />
+                            <img src={navimg} alt=" navlogo" />
                         </Link>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -77,14 +83,13 @@ function Home() {
             {/* Nav-End*/}
 
 
-
             {/* Banner-Start */}
             <div className="container mt-4 pt-4">
                 <div className="row">
                     <div className="col-md-6 mt-5 pt-3  ">
                         <div className=" mx-auto">
                             <div className='rounded-3 md-img-shadow mx-2'>
-                                <img src="https://venkatesanj.com/wp-content/uploads/2023/06/Image.png" className='img-fluid' alt="md-img" />
+                                <img src={headimg} className='img-fluid' alt="md-img" />
                             </div>
                         </div>
                     </div>
@@ -390,42 +395,44 @@ function Home() {
                 </div>
                 <div className='container'>
                     <div className='row gy-4'>
-                        <div className='col-md-4'>
-                            <div class="card custom-card px-md-5" >
-
-                                <a href="/">
-                                    <img src="https://venkatesanj.com/wp-content/uploads/2023/07/12085313_20944139-340x250.jpg"
+                    <div className='col-md-4 '>
+                    <a href="/idfc" className='text-decoration-none'>
+                            <div class="card custom-card p-5" >
+                                
+                                    <img src={bankimg}
                                         className="card-img-top zoom-effect"
                                         alt="..."
 
                                     />
-                                </a>
-                                <div class="card-body heading5">
+                                                    
+                                 <div class="card-body heading5">
                                     <div class="content" style={{ padding: "18px" }}>
                                         <div class="category-info">
 
                                             <div class="category-list">
-                                                <a href="/Idfc" className='anchor'>project</a>
+                                                <a href="/cardinside" className='anchor'>project</a>
                                             </div>
 
                                         </div>
                                         <h4 class="title">
-                                            <a href="/Idfc" data-url="" data-toggle="modal">IDFC First Bank
+                                            <a href="/cardinside" data-url="" data-toggle="modal">Idfc bank project
                                                 <i class="feather-arrow-up-right"></i></a>
                                         </h4>
                                     </div>
                                 </div>
                             </div>
+                            </a> 
                         </div>
                         <div className='col-md-4 '>
+                        <a href="/cardinside" className='text-decoration-none'>
                             <div class="card custom-card p-5" >
-                                <a href="/">
-                                    <img src="https://venkatesanj.com/wp-content/uploads/2023/07/4342541_19471-340x250.jpg"
+                                
+                                    <img src={jewelimg}
                                         className="card-img-top zoom-effect"
                                         alt="..."
 
                                     />
-                                </a>                       <div class="card-body heading5">
+                                                     <div class="card-body heading5">
                                     <div class="content" style={{ padding: "18px" }}>
                                         <div class="category-info">
 
@@ -441,16 +448,18 @@ function Home() {
                                     </div>
                                 </div>
                             </div>
+                            </a> 
                         </div>
                         <div className='col-md-4'>
+                        <a href="/trading" className='text-decoration-none'>
                             <div class="card custom-card p-5" >
-                                <a href="/">
-                                    <img src="https://venkatesanj.com/wp-content/uploads/2023/07/9464140_36136-340x250.jpg"
+                                
+                                    <img src={tradingimg}
                                         className="card-img-top zoom-effect"
                                         alt="..."
 
                                     />
-                                </a>                        <div class="card-body heading5">
+                                                     <div class="card-body heading5">
                                     <div class="content" style={{ padding: "18px" }}>
                                         <div class="category-info">
 
@@ -466,16 +475,18 @@ function Home() {
                                     </div>
                                 </div>
                             </div>
+                            </a>  
                         </div>
                         <div className='col-md-4'>
+                        <a href="/smart" className='text-decoration-none'>
                             <div class="card custom-card p-5">
-                                <a href="/">
-                                    <img src="https://venkatesanj.com/wp-content/uploads/2021/08/26765739_2109.i607.018.S.m012.c12.fintech-isometric-icons-340x250.jpg"
+                              
+                                    <img src={billimg}
                                         className="card-img-top zoom-effect"
                                         alt="..."
 
                                     />
-                                </a>                       <div class="card-body heading5">
+                                                    <div class="card-body heading5">
                                     <div class="content" style={{ padding: "18px" }}>
                                         <div class="category-info">
 
@@ -491,16 +502,18 @@ function Home() {
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </div>
                         <div className='col-md-4'>
-                            <div class="card custom-card p-5">
-                                <a href="/">
-                                    <img src="https://venkatesanj.com/wp-content/uploads/2021/08/15909026_1905.i039.037_online-payment-isometric-icons-340x250.jpg"
+                        <a href="/transaction" className='text-decoration-none'>
+                            <div class="card custom-card p-5 ">
+                               
+                                    <img src={transimg}
                                         className="card-img-top zoom-effect"
                                         alt="..."
 
                                     />
-                                </a>                         <div class="card-body heading5">
+                                                       <div class="card-body heading5">
                                     <div class="content" style={{ padding: "18px" }}>
                                         <div class="category-info">
 
@@ -516,6 +529,7 @@ function Home() {
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1148,7 +1162,7 @@ function Home() {
                                                                 loading="lazy"
                                                                 width="340"
                                                                 height="250"
-                                                                src="https://venkatesanj.com/wp-content/uploads/2023/07/profile-6-340x250.png"
+                                                                src={testimg}
                                                                 class="attachment-rainbow-thumbnail-sm size-rainbow-thumbnail-sm"
                                                                 alt="client-image"
                                                             />
@@ -1268,18 +1282,18 @@ function Home() {
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <div className="row">
-                                        <div className="col-md-4">
-                                            <div className="client">
-                                                <div className="inner">
-                                                    <div className="card-info">
+                                <div className="row p-3">
+                                        <div className="col-md-4 mb-5">
+                                            <div className="client h-100">
+                                                <div className="inner h-100">
+                                                    <div className="card-info h-100">
                                                         <div className="card-thumbnail">
                                                             <img
                                                                 decoding="async"
                                                                 loading="lazy"
                                                                 width="340"
                                                                 height="250"
-                                                                src="https://venkatesanj.com/wp-content/uploads/2023/07/profile-6-340x250.png"
+                                                                src={testimg}
                                                                 class="attachment-rainbow-thumbnail-sm size-rainbow-thumbnail-sm"
                                                                 alt="client-image"
                                                             />
@@ -1383,7 +1397,7 @@ function Home() {
                                                     </div>
                                                     <div className="my-3 border"></div>
                                                     <div class="seperator"></div>
-                                                    <p class="description heading3 active">
+                                                    <p class="description heading3">
                                                         I was blown away by Venkatesan’s Full Stack Web
                                                         Developer skillset, which resulted in a game-changing
                                                         experience for my business. Working with him was a
@@ -1399,18 +1413,18 @@ function Home() {
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <div className="row">
-                                        <div className="col-md-4">
-                                            <div className="client">
-                                                <div className="inner">
-                                                    <div className="card-info">
+                                   <div className="row p-3">
+                                        <div className="col-md-4 mb-5">
+                                            <div className="client h-100">
+                                                <div className="inner h-100">
+                                                    <div className="card-info h-100">
                                                         <div className="card-thumbnail">
                                                             <img
                                                                 decoding="async"
                                                                 loading="lazy"
                                                                 width="340"
                                                                 height="250"
-                                                                src="https://venkatesanj.com/wp-content/uploads/2023/07/profile-6-340x250.png"
+                                                                src={testimg}
                                                                 class="attachment-rainbow-thumbnail-sm size-rainbow-thumbnail-sm"
                                                                 alt="client-image"
                                                             />
@@ -1601,7 +1615,7 @@ function Home() {
                             <div className="card custom-card p-5" style={{ height: "850px" }}>
                                 <a href="/">
                                     <img
-                                        src="https://venkatesanj.com/wp-content/uploads/2021/08/contact1.png"
+                                        src={contactimg}
                                         className="card-img-top zoom-effect"
                                         alt="..."
                                     />
