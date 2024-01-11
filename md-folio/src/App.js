@@ -1,4 +1,4 @@
-
+import React , {useEffect} from 'react';
 import './Sara.css';
 import Card from './Components/Card'
 import Contact from './Components/Contact'
@@ -15,9 +15,16 @@ import Smart from './Smart';
 import Trading from './Trading';
 import Transaction from './Transaction';
 import Typed from './Components/Typed';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      
+    });
+  }, []); 
   return (
     <div className="App">
       <BrowserRouter>

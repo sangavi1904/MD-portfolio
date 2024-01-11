@@ -26,14 +26,31 @@ import contactimg from '../Assets/images/contact1.png'
 
 
 function Home() {
+    let gotoTop = (secID) => {
+        const element = document.getElementById(secID);
+        const navbarElement = document.querySelector('.navbar>.container-fluid');
+
+        if (navbarElement) {
+            var navHeight = navbarElement.clientHeight;
+            // Use navHeight as needed
+        }
+        console.log(element)
+        if (element) {
+            const topPosition = element.getBoundingClientRect().top + window.scrollY;
+            window.scrollTo({ top: topPosition - navHeight, behavior: 'smooth' });
+
+        }
+
+    }
+    gotoTop();
 
     return (
-        <div>
+        <div className='overflow-x-hidden'>
             {/* Nav-Start */}
             <div>
                 <nav class="navbar navbar-expand-lg " id='home'>
-                    <div class="container-fluid bg-body-tertiary home-nav border-bottom">
-                        <Link class="navbar-brand" to="#">
+                    <div class="container-fluid bg-body-tertiary home-nav border-bottom" data-aos="fade-up" data-aos-duration="600">
+                        <Link class="navbar-brand" onClick={() => gotoTop('home')} >
                             <img src={navimg} alt=" navlogo" />
                         </Link>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,17 +60,17 @@ function Home() {
                             <ul class="navbar-nav ms-auto mb-3 p-4 mb-lg-0 text-center ">
                                 <li class="nav-item heading6 ">
                                     {/* <Link class="nav-link active" aria-current="page" to=''>Home</Link> */}
-                                    <a class="nav-link active px-3" aria-current="page" id='name-nav' href='#home'> Home</a>
+                                    <a class="nav-link active px-3" aria-current="page" id='name-nav' onClick={() => gotoTop('home')}> Home</a>
                                 </li>
                                 <li class="nav-item heading6">
-                                    <a class="nav-link active px-3 " aria-current="page" id='name-nav' href="#summary">Summary</a>
+                                    <a class="nav-link active px-3 " aria-current="page" id='name-nav' onClick={() => gotoTop('summary')}>Summary</a>
                                 </li>
                                 {/* <li class="nav-item heading5">
                                     <a class="nav-link active " aria-current="page" href="#certificate">Certificate</a>
                                 </li> */}
                                 <li class="nav-item heading6 ">
                                     {/* <Link class="nav-link active" aria-current="page" to="#">Testimonial</Link> */}
-                                    <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#technicalskill">Technical Skills</a>
+                                    <a class="nav-link active px-3" aria-current="page" id='name-nav' onClick={() => gotoTop('technicalskill')}  >Technical Skills</a>
 
                                 </li>
                                 {/* <li class="nav-item heading5">
@@ -62,17 +79,17 @@ function Home() {
                                 </li> */}
                                 <li class="nav-item heading6">
                                     {/* <Link class="nav-link active" aria-current="page" to="#">Resume</Link> */}
-                                    <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#resume">Resume</a>
+                                    <a class="nav-link active px-3" aria-current="page" id='name-nav' onClick={() => gotoTop('resume')} >Resume</a>
 
                                 </li>
 
                                 <li class="nav-item heading6 ">
                                     {/* <Link class="nav-link active" aria-current="page" to="#">Contact</Link> */}
-                                    <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#testimonial">Testimonial</a>
+                                    <a class="nav-link active px-3" aria-current="page" id='name-nav' onClick={() => gotoTop('testimonial')} >Testimonial</a>
                                 </li>
                                 <li class="nav-item heading6">
                                     {/* <Link class="nav-link active" aria-current="page" to="#">Contact</Link> */}
-                                    <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#contact">Contact</a>
+                                    <a class="nav-link active px-3" aria-current="page" id='name-nav' onClick={() => gotoTop('contact')} >Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -88,19 +105,19 @@ function Home() {
                 <div className="row">
                     <div className="col-md-6 mt-5 pt-3  ">
                         <div className=" mx-auto">
-                            <div className='rounded-3 md-img-shadow mx-2'>
+                            <div className='rounded-3 md-img-shadow mx-2' data-aos="fade-right" data-aos-duration="700">
                                 <img src={headimg} className='img-fluid' alt="md-img" />
                             </div>
                         </div>
                     </div>
                     <div className="col-md-6">
-                       <div className='mt-5'>
-                        <p className='display-3' style={{fontWeight:"1000"}}> <span className='mt-4 pt-4 heading2 ' >Hi,</span> <span className="heading2">I'm</span>  <span className='heading float-end  mx-3'>Venkatesan J </span>
-                        <Typed/></p>
-                       </div>
+                        <div className='mt-5'>
+                            <p className='display-3' style={{ fontWeight: "1000" }}> <span className='mt-4 pt-4 heading2 ' >Hi,</span> <span className="heading2">I'm</span>  <span className='heading float-end  mx-3'>Venkatesan J </span>
+                                <Typed /></p>
+                        </div>
 
 
-                        <p className='heading3'> I am a highly skilled and experienced software developer with expertise in MERN Stack and MEAN Stack development, Java development,
+                        <p className='heading3' data-aos="fade-left" data-aos-duration="700"> I am a highly skilled and experienced software developer with expertise in MERN Stack and MEAN Stack development, Java development,
                             ArtIficial intelligence and Machine Learning, AWS DevOps tools, and automation testing. I am also certified in Oracle and AWS, further
                             validating my knowledge and proficiency in these areas. Over the years, I have honed my skills and gained valuable experience in creating
                             robust and scalable applications, implementing intelligent algorithms, and leveraging cloud technologies to deliver efficient solutions.
@@ -114,7 +131,7 @@ function Home() {
                         <div className='row pt-3 mt-3 '>
                             <div className='col-6' style={{ color: "#1e2125", fontWeight: "500" }}>
                                 <p>MY LINKEDIN PROFILE</p>
-                                <Link to="#">
+                                <Link to="https://linkedin.com/in/venkteshanj">
                                     <img src={linked} alt="Linkedin logo" className='img-fluid p-2' style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', width: '38px' }} /></Link>
                             </div>
                             <div className='col-6' style={{ color: "#1e2125", fontWeight: "500" }}>
@@ -136,9 +153,9 @@ function Home() {
 
             {/* Skills-start */}
             <div>
-                <section className='container my-5 py-3 px-5' id='summary'>
-                    <h3 className='text-center mb-3 ' style={{ color: "#f9004d" }}>LANGUAGES AND FRAMEWORK</h3>
-                    <h4 className='title sec-title text-center mb-5 p-0 heading6  fw-bold' style={{ color: "black"  }}>SKILLS</h4>
+                <section className='container my-5 py-3 px-5' id='summary' data-aos="fade-left" data-aos-duration="700">
+                    <h3 className='text-center mb-3 ' style={{ color: "#f9004d" }} >LANGUAGES AND FRAMEWORK</h3>
+                    <h4 className='title sec-title text-center mb-5 p-0 heading6  fw-bold' style={{ color: "black" }}>SKILLS</h4>
                     <div className="row d-flex justify-content-between px-md-5">
                         <div className="col-md-2 "><h6 style={{ color: "#27272E", fontWeight: "700" }} className='heading6' >Front-end Development</h6>
                             <ul className="mt-3 card-li ">
@@ -149,7 +166,7 @@ function Home() {
                                 <li>JavaScript</li>
                                 <li>ReactJS</li>
                             </ul></div>
-                        <div className="col-md-2"><h6 style={{ color: "#27272E", fontWeight: "700" }}  className='heading6' >Back-end Development</h6>
+                        <div className="col-md-2"><h6 style={{ color: "#27272E", fontWeight: "700" }} className='heading6' >Back-end Development</h6>
                             <ul className="mt-3 card-li">
                                 <li>Java</li>
                                 <li>Spring Boot</li>
@@ -159,14 +176,14 @@ function Home() {
                                 <li>Django</li>
                                 <li>Flask</li>
                             </ul></div>
-                        <div className="col-md-2"> <h6 style={{ color: "#27272E", fontWeight: "bold" }}  className='heading6'>Database</h6>
+                        <div className="col-md-2"> <h6 style={{ color: "#27272E", fontWeight: "bold" }} className='heading6'>Database</h6>
                             <ul className="mt-3 card-li">
                                 <li>MongoDB</li>
                                 <li>Oracle SQL</li>
                                 <li>MySQL</li>
                                 <li>Tailwind CSS</li>
                             </ul></div>
-                        <div className="col-md-2"> <h6 style={{ color: "#27272E", fontWeight: "bold" }}  className='heading6'>Cloud Services</h6>
+                        <div className="col-md-2"> <h6 style={{ color: "#27272E", fontWeight: "bold" }} className='heading6'>Cloud Services</h6>
                             <ul className="mt-3 card-li">
                                 <li>AWS (Amazon Web Services)</li>
                                 <li>EC2 (Elastic Compute Cloud)</li>
@@ -178,7 +195,7 @@ function Home() {
                                 <li>Firebase</li>
                             </ul>
                         </div>
-                        <div className="col-md-2 "><h6 style={{ color: "#27272E", fontWeight: "bold" }}  className='heading6'>Testing and Automation</h6>
+                        <div className="col-md-2 "><h6 style={{ color: "#27272E", fontWeight: "bold" }} className='heading6'>Testing and Automation</h6>
                             <ul className="mt-3 card-li">
                                 <li>Selenium</li>
                                 <li>Cucumber</li>
@@ -190,14 +207,14 @@ function Home() {
                     </div>
                     <div className="row d-flex justify-content-between px-md-5 mt-3">
                         <div className="col-md-2">
-                            <h6 style={{ color: "#27272E", fontWeight: "700" }}  className='heading6'>Machine Learning </h6>
+                            <h6 style={{ color: "#27272E", fontWeight: "700" }} className='heading6'>Machine Learning </h6>
                             <ul className="mt-3 card-li ">
                                 <li>Python</li>
                                 <li>scikit-learn</li>
                                 <li>TensorFlow</li>
                                 <li>PyTorch</li>
                             </ul></div>
-                        <div className="col-md-3"><h6 style={{ color: "#27272E", fontWeight: "bold" }}  className='heading6'>DevOps</h6>
+                        <div className="col-md-3"><h6 style={{ color: "#27272E", fontWeight: "bold" }} className='heading6'>DevOps</h6>
                             <ul className="mt-3 card-li">
                                 <li>Git</li>
                                 <li>Jenkins</li>
@@ -205,13 +222,13 @@ function Home() {
                                 <li>Kubernetes</li>
                                 <li>Ansible</li>
                             </ul></div>
-                        <div className="col-md-3"><h6 style={{ color: "#27272E", fontWeight: "bold" }}  className='heading6'>Java Frameworks</h6>
+                        <div className="col-md-3"><h6 style={{ color: "#27272E", fontWeight: "bold" }} className='heading6'>Java Frameworks</h6>
                             <ul className="mt-3 card-li">
                                 <li>Spring Boot</li>
                                 <li>Spring MVC</li>
                                 <li>Hibernate</li>
                             </ul></div>
-                        <div className="col-md-3"> <h6 style={{ color: "#27272E", fontWeight: "bold" }}  className='heading6'>Other Tools</h6>
+                        <div className="col-md-3"> <h6 style={{ color: "#27272E", fontWeight: "bold" }} className='heading6'>Other Tools</h6>
                             <ul className="mt-3 card-li">
                                 <li>JIRA</li>
                                 <li>Bitbucket</li>
@@ -226,7 +243,7 @@ function Home() {
             {/* Skills-end */}
 
             {/* Certificate-Start */}
-            <div className='container overflow-hidden' id='certificate'>
+            <div className='container overflow-hidden' id='certificate' data-aos="fade-right" data-aos-duration="700">
 
                 <h3 className='text-center' style={{ color: "#f9004d" }}>CERTIFICATIONS</h3>
 
@@ -263,12 +280,12 @@ function Home() {
             {/* Certificate-end */}
 
             {/* Technical-start */}
-            <div className="overflow-hidden" id="technicalskill">
+            <div className="overflow-hidden" id="technicalskill" data-aos="zoom-in" data-aos-duration="700">
 
                 <section className="container">
                     <div className="text-center mt-5">
-                    <span class="subtitle sub-title" style={{ fontFamily: '"Montserrat", sans-serif' }}>TECHNICAL</span>
-                    <h4 className='title sec-title text-center mb-5 p-0 heading6  fw-bold' style={{ color: "black"  }}>EXPERIENCE</h4>
+                        <span class="subtitle sub-title" style={{ fontFamily: '"Montserrat", sans-serif' }}>TECHNICAL</span>
+                        <h4 className='title sec-title text-center mb-5 p-0 heading6  fw-bold' style={{ color: "black" }}>EXPERIENCE</h4>
 
 
 
@@ -387,7 +404,7 @@ function Home() {
             {/* Card-Start */}
             <div>
                 <div class="elementor-widget-container " id='card' style={{ margin: "3rem" }}>
-                    <div class="section-title text-center aos-init aos-animate" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true">
+                    <div class="section-title text-center aos-init aos-animate" data-aos-delay="100" data-aos-once="true">
                         <span class="subtitle sub-title" style={{ fontFamily: '"Montserrat", sans-serif' }}>VISIT MY PROJECTS</span>
                         <h2 class="title sec-title" style={{ color: "black", }}>MY PROJECTS
                         </h2>
@@ -395,140 +412,140 @@ function Home() {
                 </div>
                 <div className='container'>
                     <div className='row gy-4'>
-                    <div className='col-md-4 '>
-                    <a href="/idfc" className='text-decoration-none'>
-                            <div class="card custom-card p-5" >
-                                
+                        <div className='col-md-4 '>
+                            <a href="/idfc" className='text-decoration-none'>
+                                <div class="card custom-card p-5" data-aos="fade-right" data-aos-duration="500" >
+
                                     <img src={bankimg}
                                         className="card-img-top zoom-effect"
                                         alt="..."
 
                                     />
-                                                    
-                                 <div class="card-body heading5">
-                                    <div class="content" style={{ padding: "18px" }}>
-                                        <div class="category-info">
 
-                                            <div class="category-list">
-                                                <a href="/cardinside" className='anchor'>project</a>
+                                    <div class="card-body heading5">
+                                        <div class="content" style={{ padding: "18px" }}>
+                                            <div class="category-info">
+
+                                                <div class="category-list">
+                                                    <a href="/cardinside" className='anchor'>project</a>
+                                                </div>
+
                                             </div>
-
+                                            <h4 class="title">
+                                                <a href="/cardinside" data-url="" data-toggle="modal">Idfc bank project
+                                                    <i class="feather-arrow-up-right"></i></a>
+                                            </h4>
                                         </div>
-                                        <h4 class="title">
-                                            <a href="/cardinside" data-url="" data-toggle="modal">Idfc bank project
-                                                <i class="feather-arrow-up-right"></i></a>
-                                        </h4>
                                     </div>
                                 </div>
-                            </div>
-                            </a> 
+                            </a>
                         </div>
                         <div className='col-md-4 '>
-                        <a href="/cardinside" className='text-decoration-none'>
-                            <div class="card custom-card p-5" >
-                                
+                            <a href="/cardinside" className='text-decoration-none'>
+                                <div class="card custom-card p-5" data-aos="fade-right" data-aos-duration="500" >
+
                                     <img src={jewelimg}
                                         className="card-img-top zoom-effect"
                                         alt="..."
 
                                     />
-                                                     <div class="card-body heading5">
-                                    <div class="content" style={{ padding: "18px" }}>
-                                        <div class="category-info">
+                                    <div class="card-body heading5">
+                                        <div class="content" style={{ padding: "18px" }}>
+                                            <div class="category-info">
 
-                                            <div class="category-list">
-                                                <a href="/cardinside" className='anchor'>project</a>
+                                                <div class="category-list">
+                                                    <a href="/cardinside" className='anchor'>project</a>
+                                                </div>
+
                                             </div>
-
+                                            <h4 class="title">
+                                                <a href="/cardinside" data-url="" data-toggle="modal">Signet Jewelers
+                                                    <i class="feather-arrow-up-right"></i></a>
+                                            </h4>
                                         </div>
-                                        <h4 class="title">
-                                            <a href="/cardinside" data-url="" data-toggle="modal">Signet Jewelers
-                                                <i class="feather-arrow-up-right"></i></a>
-                                        </h4>
                                     </div>
                                 </div>
-                            </div>
-                            </a> 
+                            </a>
                         </div>
                         <div className='col-md-4'>
-                        <a href="/trading" className='text-decoration-none'>
-                            <div class="card custom-card p-5" >
-                                
+                            <a href="/trading" className='text-decoration-none'>
+                                <div class="card custom-card p-5" data-aos="fade-right" data-aos-duration="500" >
+
                                     <img src={tradingimg}
                                         className="card-img-top zoom-effect"
                                         alt="..."
 
                                     />
-                                                     <div class="card-body heading5">
-                                    <div class="content" style={{ padding: "18px" }}>
-                                        <div class="category-info">
+                                    <div class="card-body heading5">
+                                        <div class="content" style={{ padding: "18px" }}>
+                                            <div class="category-info">
 
-                                            <div class="category-list">
-                                                <a href="/Trading" className='anchor'>project</a>
+                                                <div class="category-list">
+                                                    <a href="/Trading" className='anchor'>project</a>
+                                                </div>
+
                                             </div>
-
+                                            <h4 class="title">
+                                                <a href="/Trading" data-url="" data-toggle="modal">Trading 212
+                                                    <i class="feather-arrow-up-right"></i></a>
+                                            </h4>
                                         </div>
-                                        <h4 class="title">
-                                            <a href="/Trading" data-url="" data-toggle="modal">Trading 212
-                                                <i class="feather-arrow-up-right"></i></a>
-                                        </h4>
                                     </div>
                                 </div>
-                            </div>
-                            </a>  
+                            </a>
                         </div>
                         <div className='col-md-4'>
-                        <a href="/smart" className='text-decoration-none'>
-                            <div class="card custom-card p-5">
-                              
+                            <a href="/smart" className='text-decoration-none'>
+                                <div class="card custom-card p-5" data-aos="fade-left" data-aos-duration="500">
+
                                     <img src={billimg}
                                         className="card-img-top zoom-effect"
                                         alt="..."
 
                                     />
-                                                    <div class="card-body heading5">
-                                    <div class="content" style={{ padding: "18px" }}>
-                                        <div class="category-info">
+                                    <div class="card-body heading5">
+                                        <div class="content" style={{ padding: "18px" }}>
+                                            <div class="category-info">
 
-                                            <div class="category-list">
-                                                <a href="/Smart" className='anchor'>project</a>
+                                                <div class="category-list">
+                                                    <a href="/Smart" className='anchor'>project</a>
+                                                </div>
+
                                             </div>
-
+                                            <h4 class="title">
+                                                <a href="/Smart" data-url="" data-toggle="modal">Small Billing and CRM Sytem
+                                                    <i class="feather-arrow-up-right"></i></a>
+                                            </h4>
                                         </div>
-                                        <h4 class="title">
-                                            <a href="/Smart" data-url="" data-toggle="modal">Small Billing and CRM Sytem
-                                                <i class="feather-arrow-up-right"></i></a>
-                                        </h4>
                                     </div>
                                 </div>
-                            </div>
                             </a>
                         </div>
                         <div className='col-md-4'>
-                        <a href="/transaction" className='text-decoration-none'>
-                            <div class="card custom-card p-5 ">
-                               
+                            <a href="/transaction" className='text-decoration-none'>
+                                <div class="card custom-card p-5 " data-aos="fade-left" data-aos-duration="500">
+
                                     <img src={transimg}
                                         className="card-img-top zoom-effect"
                                         alt="..."
 
                                     />
-                                                       <div class="card-body heading5">
-                                    <div class="content" style={{ padding: "18px" }}>
-                                        <div class="category-info">
+                                    <div class="card-body heading5">
+                                        <div class="content" style={{ padding: "18px" }}>
+                                            <div class="category-info">
 
-                                            <div class="category-list">
-                                                <a href="/Transaction" className='anchor'>project</a>
+                                                <div class="category-list">
+                                                    <a href="/Transaction" className='anchor'>project</a>
+                                                </div>
+
                                             </div>
-
+                                            <h4 class="title">
+                                                <a href="/Transaction" data-url="" data-toggle="modal">Transaction Managment
+                                                    <i class="feather-arrow-up-right"></i></a>
+                                            </h4>
                                         </div>
-                                        <h4 class="title">
-                                            <a href="/Transaction" data-url="" data-toggle="modal">Transaction Managment 
-                                                <i class="feather-arrow-up-right"></i></a>
-                                        </h4>
                                     </div>
                                 </div>
-                            </div>
                             </a>
                         </div>
                     </div>
@@ -537,15 +554,15 @@ function Home() {
             {/* Card-End */}
 
             {/*Experience-Start  */}
-            <div className="container">
+            <div className="container" >
                 <div className="overflow-hidden" id="resume">
-                    <div className="text-md-center text-center mt-5">
+                    <div className="text-md-center text-center mt-5" data-aos="fade-right" data-aos-duration="500">
                         <span class="subtitle sub-title" style={{ fontFamily: '"Montserrat", sans-serif' }}>7+ YEARS OF EXPERIENCE</span>
                         <h2 class="title sec-title" style={{ color: "black" }}>MY RESUME
                         </h2>
                     </div>
                     <div className="row justify-content-md-center  mt-5">
-                        <div className="col-md-11 nav-div exp heading4 rounded-4 ">
+                        <div className="col-md-11 nav-div exp heading4 rounded-4 " data-aos="fade-left" data-aos-duration="500">
                             <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist" >
                                 <li class="nav-item" role="presentation">
                                     <button
@@ -557,7 +574,7 @@ function Home() {
                                         role="tab"
                                         aria-controls="pills-home"
                                         aria-selected="true"
-                                        className="mt-4 mx-md-5 text-md-center rounded-4 nav-button"
+                                        className="mt-4 mx-md-5 text-md-center rounded-4 nav-button active"
                                     >
                                         <h4 className='heading6'>Experience</h4>
                                     </button>
@@ -574,7 +591,7 @@ function Home() {
                                         aria-selected="true"
                                         className="mt-4 mx-md-5 text-md-center rounded-4 nav-button"
                                     >
-                                        
+
                                         <h4 className='heading6'>Professional</h4>
                                     </button>
                                 </li>
@@ -590,10 +607,10 @@ function Home() {
                             tabindex="0"
                         >
                             <section>
-                                <div className="row d-flex justify-content-around ">
-                                    <div className="col-md-3 mt-5 rounded-4 experience">
+                                <div className="row d-flex justify-content-around " >
+                                    <div className="col-md-3 mt-5 rounded-4 experience" data-aos="fade-right" data-aos-duration="500" >
                                         <div className="row container-fluid">
-                                            <div className="col-md-6 pt-4  mt-3">
+                                            <div className="col-md-6 pt-4  mt-3"  >
                                                 <h4 className="heading6">Software Engineer</h4>
                                             </div>
                                             <div className="col-md-6 justify-content-end text-md-end text-center mt-5 ">
@@ -707,9 +724,9 @@ function Home() {
                                         </div>
 
                                     </div>
-                                    <div className="col-md-3 mt-5 rounded-3 experience">
+                                    <div className="col-md-3 mt-5 rounded-3 experience" data-aos="fade" data-aos-duration="500">
                                         <div className="row container-fluid">
-                                            <div className="col-md-6 pt-4  mt-3">
+                                            <div className="col-md-6 pt-4  mt-3" >
                                                 <h4 className="heading6">Software Engineer</h4>
                                             </div>
                                             <div className="col-md-6 justify-content-end text-md-end text-center mt-5 ">
@@ -820,9 +837,9 @@ function Home() {
                                         </div>
 
                                     </div>
-                                    <div className="col-md-3 mt-5 rounded-3 experience">
+                                    <div className="col-md-3 mt-5 rounded-3 experience" data-aos="fade-left" data-aos-duration="500">
                                         <div className="row container-fluid">
-                                            <div className="col-md-6 pt-4 mt-3">
+                                            <div className="col-md-6 pt-4 mt-3"  >
                                                 <h4 className="heading6">Software Engineer</h4>
                                             </div>
                                             <div className="col-md-6 justify-content-end text-md-end text-center mt-5 ">
@@ -946,7 +963,7 @@ function Home() {
                             <section>
                                 <div className="row">
                                     <div className="col-md-5  container mt-5 pt-5">
-                                        <div className="d-flex justify-content-center mt-5">
+                                        <div className="d-flex justify-content-center mt-5" data-aos="fade-left" data-aos-duration="600">
                                             <div className=" professinal experience p-3 m-3 rounded-3">
                                                 <div className="row align-items-center justify-content-between">
                                                     <div className="col-md-8 pt-4 mt-3">
@@ -981,7 +998,7 @@ function Home() {
                                         </div>
                                     </div>
                                     <div className="col-md-5  container mt-5 pt-5">
-                                        <div className="d-flex justify-content-center mt-5">
+                                        <div className="d-flex justify-content-center mt-5" data-aos="fade-right" data-aos-duration="500" >
                                             <div className=" professinal experience  p-3 m-3 rounded-3">
                                                 <div className="row align-items-center justify-content-between">
                                                     <div className="col-md-8 pt-4 mt-3">
@@ -1127,6 +1144,8 @@ function Home() {
                     class="elementor-widget-container"
                     id="testimonial"
                     style={{ margin: "2rem" }}
+                    data-aos="fade-up"
+                    data-aos-duration="500"
                 >
                     <div
                         class="section-title text-center aos-init aos-animate"
@@ -1138,19 +1157,22 @@ function Home() {
                         <span
                             class="subtitle sub-title"
                             style={{ fontFamily: '"Montserrat", sans-serif' }}
+                            data-aos="fade-up"
+                            data-aos-duration="500"
                         >
                             WHAT CLIENTS SAY
                         </span>
-                        <h2  class="title sec-title " style={{ color: "black" }}>
+                        <h2 class="title sec-title " style={{ color: "black" }}>
                             TESTIMONAL
                         </h2>
                     </div>
                 </div>
-                <div className="container">
+                <div className="">
                     <div className="carousel ">
-                        <div id="carouselExampleIndicators" class="carousel slide">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                            <div class="carousel-inner container" data-aos="fade-right"
+                                data-aos-duration="500">
+                                <div class="carousel-item active" data-bs-interval="2000" >
                                     <div className="row p-3">
                                         <div className="col-md-4 mb-5">
                                             <div className="client h-100">
@@ -1281,8 +1303,8 @@ function Home() {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel-item">
-                                <div className="row p-3">
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <div className="row p-3">
                                         <div className="col-md-4 mb-5">
                                             <div className="client h-100">
                                                 <div className="inner h-100">
@@ -1412,8 +1434,8 @@ function Home() {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel-item">
-                                   <div className="row p-3">
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <div className="row p-3">
                                         <div className="col-md-4 mb-5">
                                             <div className="client h-100">
                                                 <div className="inner h-100">
@@ -1570,12 +1592,12 @@ function Home() {
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
-                        <div class="carousel-indicators">
+                        <div className="carousel-indicators">
                             <button
                                 type="button"
                                 data-bs-target="#carouselExampleIndicators"
                                 data-bs-slide-to="0"
-                                class="active"
+                                className="active"
                                 aria-current="true"
                                 aria-label="Slide 1"
                                 style={{ backgroundColor: "red" }}
@@ -1584,6 +1606,7 @@ function Home() {
                                 type="button"
                                 data-bs-target="#carouselExampleIndicators"
                                 data-bs-slide-to="1"
+                                className=""
                                 aria-label="Slide 2"
                                 style={{ backgroundColor: "red" }}
                             ></button>
@@ -1591,6 +1614,7 @@ function Home() {
                                 type="button"
                                 data-bs-target="#carouselExampleIndicators"
                                 data-bs-slide-to="2"
+                                className=""
                                 aria-label="Slide 3"
                                 style={{ backgroundColor: "red" }}
                             ></button>
@@ -1602,7 +1626,8 @@ function Home() {
 
             {/* Contact-Start */}
             <div>
-                <div class="elementor-widget-container" id='contact' style={{ margin: "3rem" }}>
+                <div class="elementor-widget-container" id='contact' style={{ margin: "3rem" }}    data-aos="fade-right"
+                        data-aos-duration="600">
                     <div class="section-title text-center aos-init aos-animate" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" data-aos-once="true">
                         <span class="subtitle sub-title" style={{ fontFamily: '"Montserrat", sans-serif' }}>Contact</span>
                         <h2 class="title sec-title " style={{ color: "black", fontSize: "25px" }}>CONTACT WITH ME
@@ -1612,7 +1637,7 @@ function Home() {
                 <div className="container mt-5">
                     <div className="row gx-md-5">
                         <div className="col-md-5">
-                            <div className="card custom-card p-5" style={{ height: "850px" }}>
+                            <div className="card custom-card p-5" style={{ height: "850px" }}    data-aos="zoom-in" data-aos-duration="500">
                                 <a href="/">
                                     <img
                                         src={contactimg}
@@ -1628,23 +1653,23 @@ function Home() {
                                     <p className="para mb-4" style={{ fontFamily: '"Poppins",sans-serif' }}>
                                         Want to get in touch on Developing? Here's how you can reach me! - HAPPY CONNECTING!
                                     </p>
-                                    <div className='phone mb-4' style={{ fontSize: "20px" }}>Phone: <a href="tel:+918667672605" className='heading6'>+91 
-                                    8667672605</a></div>
+                                    <div className='phone mb-4' style={{ fontSize: "20px" }}>Phone: <a href="tel:+918667672605" className='heading6'>+91
+                                        8667672605</a></div>
                                     <div className='email' style={{ fontSize: "20px" }}>Email: <a href="mailto:venkteshanj@axesstechnology.in" className='heading6'>venkteshanj@axesstechnology.in</a></div>
                                 </div>
                                 <div className="social-area mb-4">
                                     <div className="name mb-4 heading7 fw-bold" style={{ fontFamily: '""Montserrat", sans-serif;"' }}>My LinkedIn Profile :</div>
                                     <div className="social-icon skill-share has-shadow mb-2">
-                                        <Link to="#">
+                                        <Link to="https://linkedin.com/in/venkteshanj">
                                             <img src={linked} alt="Linkedin logo" className='img-fluid p-2' style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', width: '38px' }} /></Link>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-7 heading3">
-                            <div className="card custom-card p-5" style={{ height: "850px" }}>
-                                <form class="contact-form " style={{ fontFamily: '"Montserrat", sans-serif"' }}>
-                                    <div class="form-group p-3">
+                        <div className="col-md-7 heading3" >
+                            <div className="card custom-card p-5" style={{ height: "850px" }} >
+                                <form class="contact-form " style={{ fontFamily: '"Montserrat", sans-serif"' }} >
+                                    <div class="form-group p-3" data-aos="right" data-aos-duration="500">
                                         <label for="inputName" className='mb-2'>Your Name</label>
                                         <input type="text" class="form-control p-3" id="inputName" />
                                     </div>

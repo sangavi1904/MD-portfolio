@@ -140,6 +140,9 @@
   transform: scale(1.1);
 
 }
+.navbar .nav-link{
+  cursor: pointer;
+}
 
 .subtitle.sub-title {
   color: #f9004d;
@@ -627,6 +630,10 @@
 }
 
 
+
+.carousel-indicators{
+  bottom: -7% !important;
+}
 
 /*--------------------------------------------------------------
 # Back to top button
