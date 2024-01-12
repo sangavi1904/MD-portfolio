@@ -131,7 +131,7 @@ function Home() {
                         <div className='row pt-3 mt-3 '>
                             <div className='col-6' style={{ color: "#1e2125", fontWeight: "500" }}>
                                 <p>MY LINKEDIN PROFILE</p>
-                                <Link to="https://linkedin.com/in/venkteshanj">
+                                <Link to="https://linkedin.com/in/venkteshanj" target='_blank'>  
                                     <img src={linked} alt="Linkedin logo" className='img-fluid p-2' style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', width: '38px' }} /></Link>
                             </div>
                             <div className='col-6' style={{ color: "#1e2125", fontWeight: "500" }}>
