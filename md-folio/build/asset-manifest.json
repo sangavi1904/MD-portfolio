@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ed48ab03.css",
+    "main.js": "/static/js/main.ca836e90.js",
+    "static/js/787.19f8ac00.chunk.js": "/static/js/787.19f8ac00.chunk.js",
+    "static/media/md-img.png": "/static/media/md-img.d3695a0cdf566e1eea34.png",
+    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "static/media/contact1.png": "/static/media/contact1.8ddfbfd11798f881db54.png",
+    "static/media/transaction-img.jpg": "/static/media/transaction-img.66550a4420b843020dd1.jpg",
+    "static/media/jewelers-img.jpg": "/static/media/jewelers-img.5dfec306ea8a182d9e99.jpg",
+    "static/media/bank-img.jpg": "/static/media/bank-img.a2869ecf2e0176604ffe.jpg",
+    "static/media/bills-img.jpg": "/static/media/bills-img.035aca384a766ee88b15.jpg",
+    "static/media/trading-img.jpg": "/static/media/trading-img.c7b24eb755478e814f08.jpg",
+    "static/media/testi-img.png": "/static/media/testi-img.5b0d4a80fcae1181e41b.png",
+    "static/media/cer-1.jpg": "/static/media/cer-1.432ba9e4ed1455c6de1c.jpg",
+    "index.html": "/index.html",
+    "main.ed48ab03.css.map": "/static/css/main.ed48ab03.css.map",
+    "main.ca836e90.js.map": "/static/js/main.ca836e90.js.map",
+    "787.19f8ac00.chunk.js.map": "/static/js/787.19f8ac00.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ed48ab03.css",
+    "static/js/main.ca836e90.js"
+  ]
+}
